@@ -1,0 +1,47 @@
+name: Deploy portfolio to GitHub Pages
+
+# Publishes the static site to GitHub Pages. `configure-pages` with
+# enablement: true turns Pages on automatically the first time this runs,
+# so there's no need to toggle anything in the repo Settings.
+
+on:
+  push:
+    branches:
+      - main
+      - claude/copywriter-portfolio-site-qpo06w
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; don't cancel an in-progress publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages (enables it on first run)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload site as Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # The whole repo root is the site (index.html lives at the root).
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
