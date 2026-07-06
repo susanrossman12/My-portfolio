@@ -61,10 +61,17 @@ python3 -m http.server 8000
 ## Publishing it online
 
 **GitHub Pages (free):**
-1. Push this repository to GitHub.
-2. Repo **Settings → Pages → Build and deployment**.
-3. Source: *Deploy from a branch*. Branch: your default branch, folder `/ (root)`.
-4. Save. Your site appears at `https://<username>.github.io/<repo>/` in a minute or two.
+1. Open the repo's **Settings → Pages**.
+2. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+3. Pick the branch that has this site (e.g. `main`, or the branch you're working
+   on), folder `/ (root)`, then **Save**.
+4. After ~1 minute the site is live at
+   `https://<username>.github.io/<repo>/` — for this repo that's
+   <https://susanrossman12.github.io/My-portfolio/>.
+
+> The `.nojekyll` file in the repo tells Pages to serve the files exactly as they
+> are. If you later move the site to your default branch, just point Pages at that
+> branch instead.
 
 **Netlify / Vercel (free, custom domains):**
 - Netlify: drag the project folder onto <https://app.netlify.com/drop>, or connect
