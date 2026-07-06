@@ -1,0 +1,520 @@
+<!--
+  ============================================================================
+  SUSAN ROSSMAN — COPYWRITER & CREATIVE DIRECTOR · PORTFOLIO
+  ============================================================================
+
+  HOW TO CUSTOMIZE THIS SITE (no build tools required):
+
+  1.  Search this file for the word "PLACEHOLDER" to find every spot that needs
+      your real words. Everything is written in plain HTML — replace the text
+      between the tags and you're done.
+  2.  Swap the sample writing pieces in the "WORK" section for your own. Each
+      piece is a <article class="work-card"> ... follow the pattern.
+  3.  Drop your resume PDF into /assets/ (e.g. assets/susan-rossman-resume.pdf)
+      and update the two resume links (search "RESUME LINK").
+  4.  Update contact details in the CONTACT section and the footer.
+  5.  Colours, fonts and spacing live in /styles/style.css.
+  6.  See README.md for how to publish this online (GitHub Pages / Netlify).
+
+  ============================================================================
+-->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Susan Rossman — Copywriter &amp; Creative Director</title>
+<meta
+  name="description"
+  content="Portfolio of Susan Rossman, a commercial copywriter and creative director for copy — campaigns, web, email, social, editorial, scripts and brand voice."
+/>
+
+<!-- Fonts: an editorial serif for display, a clean sans for reading. -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+  rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="styles/style.css" />
+
+<!-- ========================================================================
+     SKIP LINK + HEADER / NAV
+     ===================================================================== -->
+<a class="skip-link" href="#work">Skip to the work</a>
+
+<header class="site-header" id="top">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav__brand" href="#top">
+      Susan Rossman
+      <span class="nav__brand-sub">Copywriter &amp; Creative Director</span>
+    </a>
+
+    <button
+      class="nav__toggle"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+      aria-label="Open menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav__menu" id="nav-menu">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">What I do</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <!-- RESUME LINK (1 of 2) — point href to your resume file/URL -->
+        <a class="nav__resume" href="assets/susan-rossman-resume.pdf" target="_blank" rel="noopener">
+          Résumé
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- ======================================================================
+       HERO
+       Your headline is the first sample of your writing anyone reads.
+       Make it earn attention. PLACEHOLDER copy below — make it yours.
+       =================================================================== -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <p class="hero__eyebrow">Copywriter &amp; Creative Director for Copy</p>
+    <h1 class="hero__heading" id="hero-heading">
+      I turn a blank page into the reason people choose you.
+    </h1>
+    <p class="hero__lede">
+      <!-- PLACEHOLDER: one or two sentences on who you help and how. -->
+      Fifteen years writing the campaigns, websites, emails and brand voices that
+      move people from &ldquo;never heard of them&rdquo; to &ldquo;take my money.&rdquo;
+      Strategy first, always. Craft on every line.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#work">See the work</a>
+      <a class="btn btn--ghost" href="#contact">Start a project</a>
+    </div>
+
+    <ul class="hero__stats" aria-label="At a glance">
+      <!-- PLACEHOLDER stats — swap for numbers you can stand behind. -->
+      <li><strong>15+ yrs</strong><span>writing &amp; directing copy</span></li>
+      <li><strong>40+</strong><span>brands, from startup to Fortune 500</span></li>
+      <li><strong>8</strong><span>media, one consistent voice</span></li>
+    </ul>
+  </section>
+
+  <!-- ======================================================================
+       WORK  —  the heart of the portfolio
+       Curated samples across media. Each card opens a detail panel with the
+       brief, your role and the result. Filter buttons narrow by medium.
+       =================================================================== -->
+  <section class="work" id="work" aria-labelledby="work-heading">
+    <div class="section-head">
+      <h2 class="section-head__title" id="work-heading">Selected work</h2>
+      <p class="section-head__intro">
+        A range of media, one throughline: writing that does a job. Filter by
+        the kind of work you&rsquo;re hiring for.
+      </p>
+    </div>
+
+    <!-- Filter controls (progressively enhanced by JS; all show by default) -->
+    <div class="filters" role="group" aria-label="Filter work by medium">
+      <button class="filters__btn is-active" data-filter="all">All</button>
+      <button class="filters__btn" data-filter="campaign">Brand &amp; Campaign</button>
+      <button class="filters__btn" data-filter="web">Web &amp; Landing</button>
+      <button class="filters__btn" data-filter="email">Email &amp; CRM</button>
+      <button class="filters__btn" data-filter="social">Social &amp; Digital</button>
+      <button class="filters__btn" data-filter="editorial">Long-form &amp; Editorial</button>
+      <button class="filters__btn" data-filter="script">Video &amp; Radio</button>
+      <button class="filters__btn" data-filter="product">Product &amp; UX</button>
+      <button class="filters__btn" data-filter="print">Print &amp; OOH</button>
+    </div>
+
+    <div class="work-grid">
+      <!-- --------------------------------------------------------------
+           WORK CARD TEMPLATE
+           - data-category MUST match one of the filter values above.
+           - The <template> inside each card holds the full sample that
+             opens in the reading panel. Everything is plain HTML.
+           Copy one <article> block to add a new piece.
+           -------------------------------------------------------------- -->
+
+      <!-- 1 · Brand & Campaign -->
+      <article class="work-card" data-category="campaign">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__tag">Brand &amp; Campaign</span>
+          <h3 class="work-card__title">&ldquo;Made for the mornings you almost skipped.&rdquo;</h3>
+          <p class="work-card__client">Northbrook Coffee Co. · National brand campaign</p>
+          <p class="work-card__teaser">
+            The line, manifesto and channel system for a challenger coffee brand
+            taking on the category giants.
+          </p>
+          <span class="work-card__cue">Read the sample →</span>
+        </button>
+
+        <template class="work-card__detail">
+          <p class="detail__meta"><strong>Role:</strong> Concept, tagline &amp; brand manifesto · Creative direction of the launch</p>
+          <p class="detail__meta"><strong>Brief:</strong> Launch a challenger coffee brand against two entrenched giants, on a fraction of their media budget.</p>
+          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Sold out first production run in 6 weeks; picked up by two national grocers.&rdquo;</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">The tagline</h4>
+          <p class="detail__line">Made for the mornings you almost skipped.</p>
+          <h4 class="detail__label">The manifesto</h4>
+          <p>
+            Nobody remembers an easy morning. They remember the ones they almost
+            lost — the alarm ignored twice, the to-do list already winning at 6am,
+            the version of you that nearly stayed under the covers.
+          </p>
+          <p>
+            This is the cup for that person. Not a treat. A turning point. Grown by
+            people who take mornings seriously, roasted for the ones who have no
+            choice but to show up. Skip the skip. We&rsquo;ll handle the rest.
+          </p>
+          <p class="detail__note">PLACEHOLDER — replace with your real campaign copy. Keep the brief / role / result framing; it&rsquo;s what buyers read for.</p>
+        </template>
+      </article>
+
+      <!-- 2 · Web & Landing -->
+      <article class="work-card" data-category="web">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__tag">Web &amp; Landing</span>
+          <h3 class="work-card__title">Homepage that finally said what they did</h3>
+          <p class="work-card__client">Ledgerline · B2B fintech · Website rewrite</p>
+          <p class="work-card__teaser">
+            Hero, value props and CTA for a fintech whose old site made a simple
+            product sound like a compliance manual.
+          </p>
+          <span class="work-card__cue">Read the sample →</span>
+        </button>
+
+        <template class="work-card__detail">
+          <p class="detail__meta"><strong>Role:</strong> Website messaging &amp; UX copy · Voice framework</p>
+          <p class="detail__meta"><strong>Brief:</strong> Rewrite the homepage so a busy finance lead understands the product in ten seconds.</p>
+          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Demo requests up 34% in the first quarter after launch.&rdquo;</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Hero</h4>
+          <p class="detail__line">Close the books in days, not weeks.</p>
+          <p>Ledgerline automates the month-end grind so your finance team can stop chasing spreadsheets and start reading the story in the numbers.</p>
+          <h4 class="detail__label">Value props</h4>
+          <ul class="detail__list">
+            <li><strong>See everything.</strong> Every transaction, reconciled and searchable, the moment it lands.</li>
+            <li><strong>Catch what humans miss.</strong> Anomaly flags before they become audit findings.</li>
+            <li><strong>Answer the CFO in one click.</strong> Board-ready reports that build themselves.</li>
+          </ul>
+          <h4 class="detail__label">Call to action</h4>
+          <p class="detail__line">See your first close in 20 minutes →</p>
+          <p class="detail__note">PLACEHOLDER — replace with your real web copy.</p>
+        </template>
+      </article>
+
+      <!-- 3 · Email & CRM -->
+      <article class="work-card" data-category="email">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__tag">Email &amp; CRM</span>
+          <h3 class="work-card__title">A welcome series people actually finished</h3>
+          <p class="work-card__client">Wanderwell · Travel subscription · Lifecycle email</p>
+          <p class="work-card__teaser">
+            A five-part onboarding flow written to turn free trials into members
+            who stay.
+          </p>
+          <span class="work-card__cue">Read the sample →</span>
+        </button>
+
+        <template class="work-card__detail">
+          <p class="detail__meta"><strong>Role:</strong> Lifecycle copywriting · Subject-line testing framework</p>
+          <p class="detail__meta"><strong>Brief:</strong> Lift trial-to-paid conversion on a welcome series with a tired 12% open rate.</p>
+          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Open rate to 41%; trial-to-paid up 18%.&rdquo;</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Email 1 · Subject line options</h4>
+          <ul class="detail__list">
+            <li>Your next trip starts in this email</li>
+            <li>We saved you the window seat</li>
+            <li>Don&rsquo;t pack yet. Read this first.</li>
+          </ul>
+          <h4 class="detail__label">Email 1 · Body</h4>
+          <p>Welcome aboard. Here&rsquo;s the thing most travel apps won&rsquo;t tell you: the hard part isn&rsquo;t booking the trip. It&rsquo;s deciding to go.</p>
+          <p>So we&rsquo;ll make the deciding easy. Every week, three trips picked for how you actually like to travel — no doom-scrolling, no 400 tabs. Tell us one thing to get started:</p>
+          <p class="detail__line">Where does &ldquo;out of office&rdquo; sound best right now? →</p>
+          <p class="detail__note">PLACEHOLDER — replace with your real email copy.</p>
+        </template>
+      </article>
+
+      <!-- 4 · Social & Digital -->
+      <article class="work-card" data-category="social">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__tag">Social &amp; Digital</span>
+          <h3 class="work-card__title">A voice that sounded like a person, not a brand</h3>
+          <p class="work-card__client">Petal &amp; Pot · DTC plants · Always-on social</p>
+          <p class="work-card__teaser">
+            Organic and paid social captions, plus the voice guide that kept a
+            small team sounding like one witty person.
+          </p>
+          <span class="work-card__cue">Read the sample →</span>
+        </button>
+
+        <template class="work-card__detail">
+          <p class="detail__meta"><strong>Role:</strong> Social copy · Voice &amp; tone guidelines · Creative direction</p>
+          <p class="detail__meta"><strong>Brief:</strong> Build a scroll-stopping voice for a plant brand in a very crowded, very earnest category.</p>
+          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Engagement rate 3.2×  category benchmark.&rdquo;</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Organic captions</h4>
+          <ul class="detail__list">
+            <li>Your ex said you couldn&rsquo;t keep anything alive. Your ex was wrong about a lot of things.</li>
+            <li>Plot twist: the plant isn&rsquo;t dramatic, it&rsquo;s thirsty. (Relatable.)</li>
+            <li>Sunlight requirements: bright, indirect. Emotional requirements: minimal. We love that for you.</li>
+          </ul>
+          <h4 class="detail__label">Paid social · Primary text</h4>
+          <p>The houseplant that survives real life — travel, forgetfulness, that one dark corner. Meet the ZZ plant. Nearly unkillable, quietly gorgeous, weirdly forgiving. Kind of like a good friend, minus the texting.</p>
+          <p class="detail__note">PLACEHOLDER — replace with your real social copy.</p>
+        </template>
+      </article>
+
+      <!-- 5 · Long-form & Editorial -->
+      <article class="work-card" data-category="editorial">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__tag">Long-form &amp; Editorial</span>
+          <h3 class="work-card__title">Thought leadership that didn&rsquo;t read like a brochure</h3>
+          <p class="work-card__client">Meridian Health · Bylined article · Content</p>
+          <p class="work-card__teaser">
+            A ghostwritten point-of-view piece for a CEO — the opening of a
+            2,000-word feature on rebuilding trust in healthcare.
+          </p>
+          <span class="work-card__cue">Read the sample →</span>
+        </button>
+
+        <template class="work-card__detail">
+          <p class="detail__meta"><strong>Role:</strong> Ghostwriting · Editorial strategy · Long-form</p>
+          <p class="detail__meta"><strong>Brief:</strong> Position a health-system CEO as a credible, human voice on patient trust — without corporate boilerplate.</p>
+          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Picked up by two trade outlets; most-read piece on the company blog that year.&rdquo;</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Opening</h4>
+          <p>The first time a patient told me she&rsquo;d rather Google her symptoms than call our nurse line, I stopped defending our systems and started listening. She wasn&rsquo;t being difficult. She was being efficient. We had spent a decade optimising for throughput and somewhere along the way we optimised the patient right out of the room.</p>
+          <p>Trust in healthcare isn&rsquo;t lost in a single betrayal. It&rsquo;s lost in a thousand small frictions — the hold music, the form filled out for the fourth time, the answer that arrives three days after the worry did. If we want it back, we don&rsquo;t need a campaign. We need to fix the frictions, one honest conversation at a time.</p>
+          <p class="detail__note">PLACEHOLDER — replace with your real editorial writing.</p>
+        </template>
+      </article>
+
+      <!-- 6 · Video & Radio -->
+      <article class="work-card" data-category="script">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__tag">Video &amp; Radio</span>
+          <h3 class="work-card__title">:30 spot that made insurance almost warm</h3>
+          <p class="work-card__client">Harbor Mutual · Broadcast &amp; pre-roll · Script</p>
+          <p class="work-card__teaser">
+            A thirty-second script (and its :15 cutdown) for an insurer trying to
+            sound like a neighbour, not a call centre.
+          </p>
+          <span class="work-card__cue">Read the sample →</span>
+        </button>
+
+        <template class="work-card__detail">
+          <p class="detail__meta"><strong>Role:</strong> Scriptwriting · Concept · On-set copy supervision</p>
+          <p class="detail__meta"><strong>Brief:</strong> Make a 90-year-old insurer feel human to a millennial first-time home buyer.</p>
+          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Highest brand-recall spot in the account&rsquo;s history.&rdquo;</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">:30 Television / Pre-roll</h4>
+          <p class="detail__script"><strong>OPEN</strong> on a young couple standing in an empty living room, boxes everywhere.</p>
+          <p class="detail__script"><strong>VO:</strong> Nobody tells you that the scariest part of buying a home&hellip; is everything after you buy it.</p>
+          <p class="detail__script"><strong>SFX:</strong> A pipe groans somewhere ominous.</p>
+          <p class="detail__script"><strong>VO:</strong> That&rsquo;s the part we&rsquo;re good at. Ninety years of answering the phone at 2am so you don&rsquo;t have to know what a &ldquo;deductible&rdquo; is to feel safe.</p>
+          <p class="detail__script"><strong>SUPER:</strong> Harbor Mutual. We&rsquo;ve got the house.</p>
+          <p class="detail__note">PLACEHOLDER — replace with your real script.</p>
+        </template>
+      </article>
+
+      <!-- 7 · Product & UX -->
+      <article class="work-card" data-category="product">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__tag">Product &amp; UX</span>
+          <h3 class="work-card__title">Microcopy that turned rage-quits into &ldquo;oh, nice&rdquo;</h3>
+          <p class="work-card__client">Ternpay · Payments app · UX writing</p>
+          <p class="work-card__teaser">
+            Onboarding, empty states and error messages for a payments app —
+            proof that the smallest words carry the most weight.
+          </p>
+          <span class="work-card__cue">Read the sample →</span>
+        </button>
+
+        <template class="work-card__detail">
+          <p class="detail__meta"><strong>Role:</strong> UX writing · Content design · Error-state framework</p>
+          <p class="detail__meta"><strong>Brief:</strong> Reduce support tickets caused by confusing error and empty-state copy.</p>
+          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Support tickets on failed transfers down 22%.&rdquo;</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Empty state · No transactions yet</h4>
+          <p class="detail__line">Nothing here yet — and that&rsquo;s a good sign. Send your first payment and this space fills with your money&rsquo;s greatest hits.</p>
+          <h4 class="detail__label">Error · Payment failed</h4>
+          <p class="detail__line">That didn&rsquo;t go through. Your money&rsquo;s safe — the bank just blinked. Try again, or use a different card.</p>
+          <h4 class="detail__label">Success · Transfer complete</h4>
+          <p class="detail__line">Done. $240 is on its way to Maria. We&rsquo;ll nudge you when it lands.</p>
+          <p class="detail__note">PLACEHOLDER — replace with your real product copy.</p>
+        </template>
+      </article>
+
+      <!-- 8 · Print & OOH -->
+      <article class="work-card" data-category="print">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__tag">Print &amp; OOH</span>
+          <h3 class="work-card__title">Billboards you could read at 65 mph</h3>
+          <p class="work-card__client">City Transit Authority · OOH campaign · Headlines</p>
+          <p class="work-card__teaser">
+            A run of outdoor headlines for a public-transit ridership push —
+            short, sharp, and built for a three-second read.
+          </p>
+          <span class="work-card__cue">Read the sample →</span>
+        </button>
+
+        <template class="work-card__detail">
+          <p class="detail__meta"><strong>Role:</strong> Headline writing · Campaign concept</p>
+          <p class="detail__meta"><strong>Brief:</strong> Win back riders after the pandemic with outdoor that&rsquo;s legible in three seconds.</p>
+          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Ridership up 11% along campaign corridors.&rdquo;</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Billboard headlines</h4>
+          <ul class="detail__list">
+            <li>Your car has never once let you nap.</li>
+            <li>Parking: $0. Traffic: someone else&rsquo;s problem.</li>
+            <li>The most productive part of your commute is the part you&rsquo;re not driving.</li>
+            <li>Be somewhere. Not stuck somewhere.</li>
+          </ul>
+          <p class="detail__note">PLACEHOLDER — replace with your real headlines.</p>
+        </template>
+      </article>
+    </div>
+
+    <p class="work__empty" hidden>No pieces in that category yet — try another filter.</p>
+  </section>
+
+  <!-- ======================================================================
+       ABOUT  —  your about page IS a writing sample. Make it sound like you.
+       =================================================================== -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="about__inner">
+      <div class="about__portrait">
+        <!-- PLACEHOLDER: add a photo at assets/portrait.jpg (roughly square).
+             Until then, this shows your initials. -->
+        <div class="about__photo" aria-hidden="true">SR</div>
+      </div>
+      <div class="about__body">
+        <h2 class="section-head__title" id="about-heading">About</h2>
+        <p class="about__lead">
+          <!-- PLACEHOLDER: your real story. Written in your voice — this is the sample. -->
+          I&rsquo;m Susan — a copywriter and creative director who has spent the last
+          fifteen years figuring out how to make people care.
+        </p>
+        <p>
+          I started as a junior copywriter with a thesaurus and too much confidence,
+          and learned the hard way that the best line in the world is worthless if it
+          answers the wrong question. So I got obsessed with the question. Now I lead
+          with strategy and finish with craft — the kind of writing that reads
+          effortlessly precisely because it wasn&rsquo;t.
+        </p>
+        <p>
+          As a creative director, I build and guide copy teams, translate a fuzzy
+          brief into a clear idea, and protect the good stuff all the way to launch.
+          As a writer, I still love a blank page and a deadline. I&rsquo;ve worked
+          across consumer and B2B, in-house and agency-side, for scrappy startups and
+          brands you&rsquo;d recognise.
+        </p>
+        <p>
+          When I&rsquo;m not writing, I&rsquo;m PLACEHOLDER — a sentence of personality here
+          makes you a person, not a résumé. Reading, running, rescuing houseplants;
+          whatever&rsquo;s true.
+        </p>
+
+        <div class="about__actions">
+          <!-- RESUME LINK (2 of 2) -->
+          <a class="btn btn--primary" href="assets/susan-rossman-resume.pdf" target="_blank" rel="noopener">
+            Download résumé (PDF)
+          </a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       WHAT I DO  —  services / capabilities (useful for buyers scanning fast)
+       =================================================================== -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="section-head">
+      <h2 class="section-head__title" id="services-heading">What I do</h2>
+      <p class="section-head__intro">
+        One writer who can carry a big idea across every place it needs to live.
+      </p>
+    </div>
+    <ul class="services__grid">
+      <li class="service">
+        <h3>Brand voice &amp; strategy</h3>
+        <p>Messaging frameworks, voice &amp; tone guides, taglines and positioning that give everything else a spine.</p>
+      </li>
+      <li class="service">
+        <h3>Campaign concepting</h3>
+        <p>Big ideas and the lines that carry them — from the platform down to the last banner.</p>
+      </li>
+      <li class="service">
+        <h3>Website &amp; UX copy</h3>
+        <p>Homepages, landing pages, product copy and microcopy that convert without shouting.</p>
+      </li>
+      <li class="service">
+        <h3>Email &amp; lifecycle</h3>
+        <p>Welcome flows, nurture, retention — the quiet workhorses that pay a brand&rsquo;s rent.</p>
+      </li>
+      <li class="service">
+        <h3>Scripts &amp; long-form</h3>
+        <p>Video, radio, editorial and thought leadership that hold attention past the first line.</p>
+      </li>
+      <li class="service">
+        <h3>Creative direction</h3>
+        <p>Building teams, running the room, and keeping the idea intact from brief to launch.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ======================================================================
+       CONTACT
+       =================================================================== -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="contact__inner">
+      <h2 class="section-head__title" id="contact-heading">Let&rsquo;s make something worth reading.</h2>
+      <p class="contact__intro">
+        Have a brief, a blank page, or just a hunch that your words could be
+        working harder? I&rsquo;d love to hear about it.
+      </p>
+      <div class="contact__methods">
+        <!-- PLACEHOLDER: replace with your real details. -->
+        <a class="contact__link" href="mailto:susanrossman12@gmail.com">
+          <span class="contact__label">Email</span>
+          susanrossman12@gmail.com
+        </a>
+        <a class="contact__link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+          <span class="contact__label">LinkedIn</span>
+          /in/your-handle
+        </a>
+        <!-- RESUME LINK (also here for convenience) -->
+        <a class="contact__link" href="assets/susan-rossman-resume.pdf" target="_blank" rel="noopener">
+          <span class="contact__label">Résumé</span>
+          Download PDF
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ========================================================================
+     FOOTER
+     ===================================================================== -->
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Susan Rossman. Written by a human.</p>
+  <a href="#top" class="site-footer__top">Back to top ↑</a>
+</footer>
+
+<!-- ========================================================================
+     READING PANEL (modal) — populated by JS when a work card is opened
+     ===================================================================== -->
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-labelledby="reader-title" hidden>
+  <div class="reader__backdrop" data-close></div>
+  <div class="reader__panel" role="document">
+    <button class="reader__close" data-close aria-label="Close">&times;</button>
+    <div class="reader__content" id="reader-content"><!-- injected --></div>
+  </div>
+</div>
+
+<script src="scripts/main.js"></script>
