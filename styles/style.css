@@ -288,6 +288,8 @@ main > section { max-width: var(--wrap); margin: 0 auto; padding: var(--section-
   transition: transform .35s ease;
 }
 .work-card--visual:hover .work-card__media img { transform: scale(1.03); }
+/* Center the crop when the subject sits in the middle of a tall image */
+.work-card__media--center img { object-position: center center; }
 
 /* Full creative shown inside the reading panel */
 .detail__figure { margin: 0 0 1.4rem; }
