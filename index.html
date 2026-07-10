@@ -8,10 +8,10 @@
   1.  Search this file for the word "PLACEHOLDER" to find every spot that needs
       your real words. Everything is written in plain HTML — replace the text
       between the tags and you're done.
-  2.  Swap the sample writing pieces in the "WORK" section for your own. Each
-      piece is a <article class="work-card"> ... follow the pattern.
+  2.  Swap or add writing pieces in the "WORK" section. Each piece is a
+      <article class="work-card"> ... follow the pattern.
   3.  Drop your resume PDF into /assets/ (e.g. assets/susan-rossman-resume.pdf)
-      and update the two resume links (search "RESUME LINK").
+      and update the resume links (search "RESUME LINK").
   4.  Update contact details in the CONTACT section and the footer.
   5.  Colours, fonts and spacing live in /styles/style.css.
   6.  See README.md for how to publish this online (GitHub Pages / Netlify).
@@ -63,7 +63,7 @@
       <li><a href="#services">What I do</a></li>
       <li><a href="#contact">Contact</a></li>
       <li>
-        <!-- RESUME LINK (1 of 2) — point href to your resume file/URL -->
+        <!-- RESUME LINK (1 of 3) — point href to your resume file/URL -->
         <a class="nav__resume" href="assets/susan-rossman-resume.pdf" target="_blank" rel="noopener">
           Résumé
         </a>
@@ -85,8 +85,8 @@
     </h1>
     <p class="hero__lede">
       <!-- PLACEHOLDER: one or two sentences on who you help and how. -->
-      Fifteen years writing the campaigns, websites, emails and brand voices that
-      move people from &ldquo;never heard of them&rdquo; to &ldquo;take my money.&rdquo;
+      Years spent writing the campaigns, websites, social and brand voices that
+      move people from &ldquo;never heard of them&rdquo; to &ldquo;count me in.&rdquo;
       Strategy first, always. Craft on every line.
     </p>
     <div class="hero__actions">
@@ -96,9 +96,9 @@
 
     <ul class="hero__stats" aria-label="At a glance">
       <!-- PLACEHOLDER stats — swap for numbers you can stand behind. -->
-      <li><strong>15+ yrs</strong><span>writing &amp; directing copy</span></li>
-      <li><strong>40+</strong><span>brands, from startup to Fortune 500</span></li>
-      <li><strong>8</strong><span>media, one consistent voice</span></li>
+      <li><strong>15.68%</strong><span>social engagement rate — 7&times; benchmark</span></li>
+      <li><strong>National</strong><span>brand work for TD Bank</span></li>
+      <li><strong>Every medium</strong><span>web, social, film, print &amp; OOH</span></li>
     </ul>
   </section>
 
@@ -116,16 +116,14 @@
       </p>
     </div>
 
-    <!-- Filter controls (progressively enhanced by JS; all show by default) -->
+    <!-- Filter controls (progressively enhanced by JS; all show by default).
+         Only categories that currently have work are shown. To add a new
+         medium, add a button here and give a card the matching data-category. -->
     <div class="filters" role="group" aria-label="Filter work by medium">
       <button class="filters__btn is-active" data-filter="all">All</button>
-      <button class="filters__btn" data-filter="campaign">Brand &amp; Campaign</button>
-      <button class="filters__btn" data-filter="web">Web &amp; Landing</button>
-      <button class="filters__btn" data-filter="email">Email &amp; CRM</button>
+      <button class="filters__btn" data-filter="web">Web &amp; Brand</button>
       <button class="filters__btn" data-filter="social">Social &amp; Digital</button>
-      <button class="filters__btn" data-filter="editorial">Long-form &amp; Editorial</button>
-      <button class="filters__btn" data-filter="script">Video &amp; Radio</button>
-      <button class="filters__btn" data-filter="product">Product &amp; UX</button>
+      <button class="filters__btn" data-filter="script">Video &amp; Film</button>
       <button class="filters__btn" data-filter="print">Print &amp; OOH</button>
     </div>
 
@@ -138,243 +136,147 @@
            Copy one <article> block to add a new piece.
            -------------------------------------------------------------- -->
 
-      <!-- 1 · Brand & Campaign -->
-      <article class="work-card" data-category="campaign">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__tag">Brand &amp; Campaign</span>
-          <h3 class="work-card__title">&ldquo;Made for the mornings you almost skipped.&rdquo;</h3>
-          <p class="work-card__client">Northbrook Coffee Co. · National brand campaign</p>
-          <p class="work-card__teaser">
-            The line, manifesto and channel system for a challenger coffee brand
-            taking on the category giants.
-          </p>
-          <span class="work-card__cue">Read the sample →</span>
-        </button>
-
-        <template class="work-card__detail">
-          <p class="detail__meta"><strong>Role:</strong> Concept, tagline &amp; brand manifesto · Creative direction of the launch</p>
-          <p class="detail__meta"><strong>Brief:</strong> Launch a challenger coffee brand against two entrenched giants, on a fraction of their media budget.</p>
-          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Sold out first production run in 6 weeks; picked up by two national grocers.&rdquo;</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">The tagline</h4>
-          <p class="detail__line">Made for the mornings you almost skipped.</p>
-          <h4 class="detail__label">The manifesto</h4>
-          <p>
-            Nobody remembers an easy morning. They remember the ones they almost
-            lost — the alarm ignored twice, the to-do list already winning at 6am,
-            the version of you that nearly stayed under the covers.
-          </p>
-          <p>
-            This is the cup for that person. Not a treat. A turning point. Grown by
-            people who take mornings seriously, roasted for the ones who have no
-            choice but to show up. Skip the skip. We&rsquo;ll handle the rest.
-          </p>
-          <p class="detail__note">PLACEHOLDER — replace with your real campaign copy. Keep the brief / role / result framing; it&rsquo;s what buyers read for.</p>
-        </template>
-      </article>
-
-      <!-- 2 · Web & Landing -->
+      <!-- 1 · Web & Brand — TD Bank brand front door -->
       <article class="work-card" data-category="web">
         <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__tag">Web &amp; Landing</span>
-          <h3 class="work-card__title">Homepage that finally said what they did</h3>
-          <p class="work-card__client">Ledgerline · B2B fintech · Website rewrite</p>
+          <span class="work-card__tag">Web &amp; Brand</span>
+          <h3 class="work-card__title">Unexpectedly Human</h3>
+          <p class="work-card__client">TD Bank · Brand &ldquo;front door&rdquo; (About) redesign</p>
           <p class="work-card__teaser">
-            Hero, value props and CTA for a fintech whose old site made a simple
-            product sound like a compliance manual.
+            A redesigned brand homepage built around a single, un-bank-like
+            promise: that people matter most.
           </p>
           <span class="work-card__cue">Read the sample →</span>
         </button>
 
         <template class="work-card__detail">
-          <p class="detail__meta"><strong>Role:</strong> Website messaging &amp; UX copy · Voice framework</p>
-          <p class="detail__meta"><strong>Brief:</strong> Rewrite the homepage so a busy finance lead understands the product in ten seconds.</p>
-          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Demo requests up 34% in the first quarter after launch.&rdquo;</p>
+          <p class="detail__meta"><strong>Role:</strong> Brand messaging &amp; web copy</p>
+          <p class="detail__meta"><strong>Brief:</strong> Rework TD&rsquo;s brand &ldquo;front door&rdquo; so the first thing visitors feel is the human promise behind the bank — not banking boilerplate.</p>
+          <p class="detail__meta"><strong>Result:</strong> A brand narrative that carries a single idea — &ldquo;the human side of banking&rdquo; — from the hero straight through to community, inclusion and sustainability.</p>
           <hr class="detail__rule" />
           <h4 class="detail__label">Hero</h4>
-          <p class="detail__line">Close the books in days, not weeks.</p>
-          <p>Ledgerline automates the month-end grind so your finance team can stop chasing spreadsheets and start reading the story in the numbers.</p>
-          <h4 class="detail__label">Value props</h4>
+          <p class="detail__line">Unexpectedly Human</p>
+          <p>It all comes down to this — people matter most.</p>
+          <h4 class="detail__label">The three pillars</h4>
           <ul class="detail__list">
-            <li><strong>See everything.</strong> Every transaction, reconciled and searchable, the moment it lands.</li>
-            <li><strong>Catch what humans miss.</strong> Anomaly flags before they become audit findings.</li>
-            <li><strong>Answer the CFO in one click.</strong> Board-ready reports that build themselves.</li>
+            <li><strong>People Matter Most.</strong> The best in us starts with you.</li>
+            <li><strong>Strength &amp; Stability.</strong> Here for you, now and in the future.</li>
+            <li><strong>Innovation.</strong> Improving how you bank.</li>
           </ul>
-          <h4 class="detail__label">Call to action</h4>
-          <p class="detail__line">See your first close in 20 minutes →</p>
-          <p class="detail__note">PLACEHOLDER — replace with your real web copy.</p>
+          <h4 class="detail__label">About TD Bank</h4>
+          <p>Welcome to the human side of banking. Here, people matter most. So we&rsquo;re committed to going beyond what customers would expect from a bank.</p>
+          <h4 class="detail__label">Section intros</h4>
+          <ul class="detail__list">
+            <li><strong>Community.</strong> We love where we live and work, and it&rsquo;s why giving back comes naturally.</li>
+            <li><strong>Diversity &amp; Inclusion.</strong> Different voices. Different perspectives. Let&rsquo;s create a more accepting and inclusive world.</li>
+            <li><strong>Sustainability.</strong> See how sustainability plays a role in our business practices.</li>
+          </ul>
         </template>
       </article>
 
-      <!-- 3 · Email & CRM -->
-      <article class="work-card" data-category="email">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__tag">Email &amp; CRM</span>
-          <h3 class="work-card__title">A welcome series people actually finished</h3>
-          <p class="work-card__client">Wanderwell · Travel subscription · Lifecycle email</p>
-          <p class="work-card__teaser">
-            A five-part onboarding flow written to turn free trials into members
-            who stay.
-          </p>
-          <span class="work-card__cue">Read the sample →</span>
-        </button>
-
-        <template class="work-card__detail">
-          <p class="detail__meta"><strong>Role:</strong> Lifecycle copywriting · Subject-line testing framework</p>
-          <p class="detail__meta"><strong>Brief:</strong> Lift trial-to-paid conversion on a welcome series with a tired 12% open rate.</p>
-          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Open rate to 41%; trial-to-paid up 18%.&rdquo;</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">Email 1 · Subject line options</h4>
-          <ul class="detail__list">
-            <li>Your next trip starts in this email</li>
-            <li>We saved you the window seat</li>
-            <li>Don&rsquo;t pack yet. Read this first.</li>
-          </ul>
-          <h4 class="detail__label">Email 1 · Body</h4>
-          <p>Welcome aboard. Here&rsquo;s the thing most travel apps won&rsquo;t tell you: the hard part isn&rsquo;t booking the trip. It&rsquo;s deciding to go.</p>
-          <p>So we&rsquo;ll make the deciding easy. Every week, three trips picked for how you actually like to travel — no doom-scrolling, no 400 tabs. Tell us one thing to get started:</p>
-          <p class="detail__line">Where does &ldquo;out of office&rdquo; sound best right now? →</p>
-          <p class="detail__note">PLACEHOLDER — replace with your real email copy.</p>
-        </template>
-      </article>
-
-      <!-- 4 · Social & Digital -->
+      <!-- 2 · Social & Digital — Connecticut Sun sponsorship launch -->
       <article class="work-card" data-category="social">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__tag">Social &amp; Digital</span>
-          <h3 class="work-card__title">A voice that sounded like a person, not a brand</h3>
-          <p class="work-card__client">Petal &amp; Pot · DTC plants · Always-on social</p>
+          <h3 class="work-card__title">&ldquo;Huge fans of the Sun. Now it&rsquo;s official.&rdquo;</h3>
+          <p class="work-card__client">TD Bank &times; Connecticut Sun (WNBA) · Sponsorship launch · Instagram</p>
           <p class="work-card__teaser">
-            Organic and paid social captions, plus the voice guide that kept a
-            small team sounding like one witty person.
+            The launch post announcing TD as the Official Bank of the Connecticut
+            Sun — written to rally fans, not just log a partnership.
           </p>
           <span class="work-card__cue">Read the sample →</span>
         </button>
 
         <template class="work-card__detail">
-          <p class="detail__meta"><strong>Role:</strong> Social copy · Voice &amp; tone guidelines · Creative direction</p>
-          <p class="detail__meta"><strong>Brief:</strong> Build a scroll-stopping voice for a plant brand in a very crowded, very earnest category.</p>
-          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Engagement rate 3.2×  category benchmark.&rdquo;</p>
+          <p class="detail__meta"><strong>Role:</strong> Social copy &amp; campaign launch</p>
+          <p class="detail__meta"><strong>Brief:</strong> Announce a multi-year WNBA sponsorship in a way that connected with young New England women&rsquo;s-sports fans.</p>
+          <p class="detail__meta"><strong>Result:</strong> 15.68% engagement rate against a 2.29% platform benchmark — nearly 7&times; — with 69 shares (benchmark: 4) and 1,036 total engagements (benchmark: 164).</p>
           <hr class="detail__rule" />
-          <h4 class="detail__label">Organic captions</h4>
-          <ul class="detail__list">
-            <li>Your ex said you couldn&rsquo;t keep anything alive. Your ex was wrong about a lot of things.</li>
-            <li>Plot twist: the plant isn&rsquo;t dramatic, it&rsquo;s thirsty. (Relatable.)</li>
-            <li>Sunlight requirements: bright, indirect. Emotional requirements: minimal. We love that for you.</li>
-          </ul>
-          <h4 class="detail__label">Paid social · Primary text</h4>
-          <p>The houseplant that survives real life — travel, forgetfulness, that one dark corner. Meet the ZZ plant. Nearly unkillable, quietly gorgeous, weirdly forgiving. Kind of like a good friend, minus the texting.</p>
-          <p class="detail__note">PLACEHOLDER — replace with your real social copy.</p>
+          <h4 class="detail__label">Arena / launch line</h4>
+          <p class="detail__line">Huge fans of the Sun. Now it&rsquo;s official.</p>
+          <h4 class="detail__label">Instagram caption</h4>
+          <p>We&rsquo;re excited to announce a multi-year sponsorship with the @connecticutsun! Together, we&rsquo;re creating new ways for young fans in New England to access women&rsquo;s sports. 🏀✨</p>
+          <p>With free bus rides to the game, player meet &amp; greets and game-day perks for TD Cardholders, we&rsquo;re all in as the Official Bank of the Connecticut Sun. #BringTheHeat</p>
+          <p>Click the link in our bio to learn more.</p>
         </template>
       </article>
 
-      <!-- 5 · Long-form & Editorial -->
-      <article class="work-card" data-category="editorial">
+      <!-- 3 · Social & Digital — always-on content system -->
+      <article class="work-card" data-category="social">
         <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__tag">Long-form &amp; Editorial</span>
-          <h3 class="work-card__title">Thought leadership that didn&rsquo;t read like a brochure</h3>
-          <p class="work-card__client">Meridian Health · Bylined article · Content</p>
+          <span class="work-card__tag">Social &amp; Digital</span>
+          <h3 class="work-card__title">A social content engine that beat every benchmark</h3>
+          <p class="work-card__client">TD Bank · Always-on social content &amp; strategy</p>
           <p class="work-card__teaser">
-            A ghostwritten point-of-view piece for a CEO — the opening of a
-            2,000-word feature on rebuilding trust in healthcare.
+            A content system organised into buckets — Products, Social Impact,
+            Brand — with the lines that made each one outperform.
           </p>
           <span class="work-card__cue">Read the sample →</span>
         </button>
 
         <template class="work-card__detail">
-          <p class="detail__meta"><strong>Role:</strong> Ghostwriting · Editorial strategy · Long-form</p>
-          <p class="detail__meta"><strong>Brief:</strong> Position a health-system CEO as a credible, human voice on patient trust — without corporate boilerplate.</p>
-          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Picked up by two trade outlets; most-read piece on the company blog that year.&rdquo;</p>
+          <p class="detail__meta"><strong>Role:</strong> Social copywriting &amp; content strategy</p>
+          <p class="detail__meta"><strong>Brief:</strong> Build always-on social that earns engagement across product, purpose and brand — and prove what works.</p>
+          <p class="detail__meta"><strong>Result:</strong> Products &amp; Services content led at a 3.57% engagement rate, Social Impact at 3.36% and Brand at 2.98% — with standout posts reaching 11.8% (&ldquo;Get paychecks early&rdquo;) and 11.5% (&ldquo;Unexpectedly Canine&rdquo;).</p>
           <hr class="detail__rule" />
-          <h4 class="detail__label">Opening</h4>
-          <p>The first time a patient told me she&rsquo;d rather Google her symptoms than call our nurse line, I stopped defending our systems and started listening. She wasn&rsquo;t being difficult. She was being efficient. We had spent a decade optimising for throughput and somewhere along the way we optimised the patient right out of the room.</p>
-          <p>Trust in healthcare isn&rsquo;t lost in a single betrayal. It&rsquo;s lost in a thousand small frictions — the hold music, the form filled out for the fourth time, the answer that arrives three days after the worry did. If we want it back, we don&rsquo;t need a campaign. We need to fix the frictions, one honest conversation at a time.</p>
-          <p class="detail__note">PLACEHOLDER — replace with your real editorial writing.</p>
+          <h4 class="detail__label">Products &amp; Services</h4>
+          <p class="detail__line">Get paychecks early.</p>
+          <p>TD Complete Checking — here for all life&rsquo;s adventures.</p>
+          <h4 class="detail__label">Brand</h4>
+          <p class="detail__line">Unexpectedly Canine.</p>
+          <p>Introducing the Automated Treat Machine — because the best in us starts with a good dog.</p>
+          <h4 class="detail__label">Social Impact</h4>
+          <p>Spotlighting the partners doing the work — like the Philadelphia Chinatown Development Corporation — in their words, shared by TD Bank.</p>
         </template>
       </article>
 
-      <!-- 6 · Video & Radio -->
+      <!-- 4 · Video & Film — Community Impact Plan -->
       <article class="work-card" data-category="script">
         <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__tag">Video &amp; Radio</span>
-          <h3 class="work-card__title">:30 spot that made insurance almost warm</h3>
-          <p class="work-card__client">Harbor Mutual · Broadcast &amp; pre-roll · Script</p>
+          <span class="work-card__tag">Video &amp; Film</span>
+          <h3 class="work-card__title">Community Impact Plan</h3>
+          <p class="work-card__client">TD Bank · Brand film</p>
           <p class="work-card__teaser">
-            A thirty-second script (and its :15 cutdown) for an insurer trying to
-            sound like a neighbour, not a call centre.
+            The brand film introducing TD&rsquo;s Community Impact Plan — a
+            purpose story with a pulse, not a press release.
           </p>
           <span class="work-card__cue">Read the sample →</span>
         </button>
 
         <template class="work-card__detail">
-          <p class="detail__meta"><strong>Role:</strong> Scriptwriting · Concept · On-set copy supervision</p>
-          <p class="detail__meta"><strong>Brief:</strong> Make a 90-year-old insurer feel human to a millennial first-time home buyer.</p>
-          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Highest brand-recall spot in the account&rsquo;s history.&rdquo;</p>
+          <p class="detail__meta"><strong>Role:</strong> Video concept &amp; script</p>
+          <p class="detail__meta"><strong>Brief:</strong> Turn a corporate community-investment plan into a film people actually feel — grand-openings, ribbon-cuttings and real neighbourhoods.</p>
+          <p class="detail__meta"><strong>Result:</strong> A flagship brand film anchoring TD&rsquo;s community storytelling.</p>
           <hr class="detail__rule" />
-          <h4 class="detail__label">:30 Television / Pre-roll</h4>
-          <p class="detail__script"><strong>OPEN</strong> on a young couple standing in an empty living room, boxes everywhere.</p>
-          <p class="detail__script"><strong>VO:</strong> Nobody tells you that the scariest part of buying a home&hellip; is everything after you buy it.</p>
-          <p class="detail__script"><strong>SFX:</strong> A pipe groans somewhere ominous.</p>
-          <p class="detail__script"><strong>VO:</strong> That&rsquo;s the part we&rsquo;re good at. Ninety years of answering the phone at 2am so you don&rsquo;t have to know what a &ldquo;deductible&rdquo; is to feel safe.</p>
-          <p class="detail__script"><strong>SUPER:</strong> Harbor Mutual. We&rsquo;ve got the house.</p>
-          <p class="detail__note">PLACEHOLDER — replace with your real script.</p>
+          <h4 class="detail__label">Title treatment</h4>
+          <p class="detail__line">Community Impact Plan — by TD Bank.</p>
+          <p class="detail__note">Add the full VO / script here when you&rsquo;re ready — this card is set up to hold it. (Search &ldquo;Community Impact&rdquo; in index.html.)</p>
         </template>
       </article>
 
-      <!-- 7 · Product & UX -->
-      <article class="work-card" data-category="product">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__tag">Product &amp; UX</span>
-          <h3 class="work-card__title">Microcopy that turned rage-quits into &ldquo;oh, nice&rdquo;</h3>
-          <p class="work-card__client">Ternpay · Payments app · UX writing</p>
-          <p class="work-card__teaser">
-            Onboarding, empty states and error messages for a payments app —
-            proof that the smallest words carry the most weight.
-          </p>
-          <span class="work-card__cue">Read the sample →</span>
-        </button>
-
-        <template class="work-card__detail">
-          <p class="detail__meta"><strong>Role:</strong> UX writing · Content design · Error-state framework</p>
-          <p class="detail__meta"><strong>Brief:</strong> Reduce support tickets caused by confusing error and empty-state copy.</p>
-          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Support tickets on failed transfers down 22%.&rdquo;</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">Empty state · No transactions yet</h4>
-          <p class="detail__line">Nothing here yet — and that&rsquo;s a good sign. Send your first payment and this space fills with your money&rsquo;s greatest hits.</p>
-          <h4 class="detail__label">Error · Payment failed</h4>
-          <p class="detail__line">That didn&rsquo;t go through. Your money&rsquo;s safe — the bank just blinked. Try again, or use a different card.</p>
-          <h4 class="detail__label">Success · Transfer complete</h4>
-          <p class="detail__line">Done. $240 is on its way to Maria. We&rsquo;ll nudge you when it lands.</p>
-          <p class="detail__note">PLACEHOLDER — replace with your real product copy.</p>
-        </template>
-      </article>
-
-      <!-- 8 · Print & OOH -->
+      <!-- 5 · Print & OOH — Payday vibes poster -->
       <article class="work-card" data-category="print">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__tag">Print &amp; OOH</span>
-          <h3 class="work-card__title">Billboards you could read at 65 mph</h3>
-          <p class="work-card__client">City Transit Authority · OOH campaign · Headlines</p>
+          <h3 class="work-card__title">&ldquo;Payday vibes.&rdquo;</h3>
+          <p class="work-card__client">TD Bank · TD Early Pay · Poster</p>
           <p class="work-card__teaser">
-            A run of outdoor headlines for a public-transit ridership push —
-            short, sharp, and built for a three-second read.
+            A product poster that sells a banking feature as a feeling.
           </p>
           <span class="work-card__cue">Read the sample →</span>
         </button>
 
         <template class="work-card__detail">
-          <p class="detail__meta"><strong>Role:</strong> Headline writing · Campaign concept</p>
-          <p class="detail__meta"><strong>Brief:</strong> Win back riders after the pandemic with outdoor that&rsquo;s legible in three seconds.</p>
-          <p class="detail__meta"><strong>Result:</strong> PLACEHOLDER — e.g. &ldquo;Ridership up 11% along campaign corridors.&rdquo;</p>
+          <p class="detail__meta"><strong>Role:</strong> Headline &amp; product copy</p>
+          <p class="detail__meta"><strong>Brief:</strong> Make an early-direct-deposit feature feel like a lifestyle perk, not a banking term.</p>
+          <p class="detail__meta"><strong>Result:</strong> A poster that leads with the payoff and lets the product line do the explaining.</p>
           <hr class="detail__rule" />
-          <h4 class="detail__label">Billboard headlines</h4>
-          <ul class="detail__list">
-            <li>Your car has never once let you nap.</li>
-            <li>Parking: $0. Traffic: someone else&rsquo;s problem.</li>
-            <li>The most productive part of your commute is the part you&rsquo;re not driving.</li>
-            <li>Be somewhere. Not stuck somewhere.</li>
-          </ul>
-          <p class="detail__note">PLACEHOLDER — replace with your real headlines.</p>
+          <h4 class="detail__label">Headline</h4>
+          <p class="detail__line">Payday vibes.</p>
+          <h4 class="detail__label">Subhead</h4>
+          <p>With TD Early Pay, you get paid up to 2 business days early.</p>
+          <h4 class="detail__label">Tagline</h4>
+          <p class="detail__line">More human.</p>
         </template>
       </article>
     </div>
@@ -396,8 +298,8 @@
         <h2 class="section-head__title" id="about-heading">About</h2>
         <p class="about__lead">
           <!-- PLACEHOLDER: your real story. Written in your voice — this is the sample. -->
-          I&rsquo;m Susan — a copywriter and creative director who has spent the last
-          fifteen years figuring out how to make people care.
+          I&rsquo;m Susan — a copywriter and creative director who has spent my
+          career figuring out how to make people care.
         </p>
         <p>
           I started as a junior copywriter with a thesaurus and too much confidence,
@@ -409,9 +311,9 @@
         <p>
           As a creative director, I build and guide copy teams, translate a fuzzy
           brief into a clear idea, and protect the good stuff all the way to launch.
-          As a writer, I still love a blank page and a deadline. I&rsquo;ve worked
-          across consumer and B2B, in-house and agency-side, for scrappy startups and
-          brands you&rsquo;d recognise.
+          As a writer, I still love a blank page and a deadline. My work for TD Bank
+          alone has spanned brand, product, social, film and print — one voice across
+          every place it needed to live.
         </p>
         <p>
           When I&rsquo;m not writing, I&rsquo;m PLACEHOLDER — a sentence of personality here
@@ -420,7 +322,7 @@
         </p>
 
         <div class="about__actions">
-          <!-- RESUME LINK (2 of 2) -->
+          <!-- RESUME LINK (2 of 3) -->
           <a class="btn btn--primary" href="assets/susan-rossman-resume.pdf" target="_blank" rel="noopener">
             Download résumé (PDF)
           </a>
@@ -454,8 +356,8 @@
         <p>Homepages, landing pages, product copy and microcopy that convert without shouting.</p>
       </li>
       <li class="service">
-        <h3>Email &amp; lifecycle</h3>
-        <p>Welcome flows, nurture, retention — the quiet workhorses that pay a brand&rsquo;s rent.</p>
+        <h3>Social &amp; lifecycle</h3>
+        <p>Always-on social, launches and email that earn engagement and pay a brand&rsquo;s rent.</p>
       </li>
       <li class="service">
         <h3>Scripts &amp; long-form</h3>
@@ -488,7 +390,7 @@
           <span class="contact__label">LinkedIn</span>
           /in/your-handle
         </a>
-        <!-- RESUME LINK (also here for convenience) -->
+        <!-- RESUME LINK (3 of 3) -->
         <a class="contact__link" href="assets/susan-rossman-resume.pdf" target="_blank" rel="noopener">
           <span class="contact__label">Résumé</span>
           Download PDF
