@@ -277,6 +277,26 @@ main > section { max-width: var(--wrap); margin: 0 auto; padding: var(--section-
 
 .work__empty { text-align: center; color: var(--ink-soft); padding: 2rem 0; }
 
+/* Visual cards (those with a thumbnail image) */
+.work-card--visual .work-card__open { padding: 0; }
+.work-card__body { display: block; padding: 1.6rem 1.5rem 1.7rem; }
+.work-card__media { display: block; overflow: hidden; }
+.work-card__media img {
+  display: block; width: 100%; aspect-ratio: 16 / 10;
+  object-fit: cover; object-position: center top;
+  border-bottom: 1px solid var(--line);
+  transition: transform .35s ease;
+}
+.work-card--visual:hover .work-card__media img { transform: scale(1.03); }
+
+/* Full creative shown inside the reading panel */
+.detail__figure { margin: 0 0 1.4rem; }
+.detail__figure img {
+  display: block; width: 100%; height: auto;
+  border-radius: 10px; border: 1px solid var(--line);
+}
+.detail__figure--tall img { max-width: 21rem; margin-inline: auto; }
+
 /* --------------------------------------------------------------------------
    Reading panel (modal)
    -------------------------------------------------------------------------- */
