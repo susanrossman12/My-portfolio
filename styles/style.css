@@ -329,6 +329,7 @@ main > section { max-width: var(--wrap); margin: 0 auto; padding: var(--section-
 .detail__script { margin: 0 0 .6rem; font-size: .98rem; }
 .detail__list { margin: 0 0 1rem; padding-left: 1.2rem; }
 .detail__list li { margin-bottom: .5rem; }
+.detail__cta { margin: 1.4rem 0; }
 .detail__note {
   font-size: .82rem; color: var(--ink-soft); font-style: italic;
   border-left: 3px solid var(--highlight); padding-left: .9rem; margin-top: 1.5rem;
