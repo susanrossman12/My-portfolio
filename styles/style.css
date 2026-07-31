@@ -291,31 +291,6 @@ main > section { max-width: var(--wrap); margin: 0 auto; padding: var(--section-
 /* Center the crop when the subject sits in the middle of a tall image */
 .work-card__media--center img { object-position: center center; }
 
-/* Designed typographic thumbnail (for a piece with no photo, e.g. an article) */
-.media-tile {
-  position: relative; display: flex; flex-direction: column; justify-content: flex-end;
-  width: 100%; aspect-ratio: 16 / 10; overflow: hidden;
-  padding: 1.4rem 1.5rem;
-  border-bottom: 1px solid var(--line);
-  background:
-    radial-gradient(130% 90% at 82% 8%, rgba(255,255,255,.16) 0%, transparent 55%),
-    linear-gradient(150deg, #55684a 0%, #33422b 100%);
-  color: #f6f2ea;
-}
-.media-tile__kicker {
-  font-family: var(--font-body); font-size: .68rem; font-weight: 600;
-  letter-spacing: .14em; text-transform: uppercase;
-  color: rgba(246,242,234,.82); margin-bottom: .45rem;
-}
-.media-tile__headline {
-  font-family: var(--font-display); font-weight: 600;
-  font-size: clamp(1.35rem, 2.4vw, 1.9rem); line-height: 1.12; max-width: 15ch;
-}
-.media-tile__apple {
-  position: absolute; top: .85rem; right: 1.1rem; font-size: 1.7rem;
-  filter: drop-shadow(0 2px 5px rgba(0,0,0,.3));
-}
-
 /* Full creative shown inside the reading panel */
 .detail__figure { margin: 0 0 1.4rem; }
 .detail__figure img {
