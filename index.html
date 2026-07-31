@@ -120,15 +120,117 @@
     </div>
 
     <div class="work-grid">
-      <!-- --------------------------------------------------------------
-           WORK CARD TEMPLATE
-           - data-category MUST match one of the filter values above.
-           - The <template> inside each card holds the full sample that
-             opens in the reading panel. Everything is plain HTML.
-           Copy one <article> block to add a new piece.
-           -------------------------------------------------------------- -->
+      <!-- Work samples. The order here controls the "All" view. data-category must match a filter above. -->
 
-      <!-- 1 · Web & Brand — TD Bank brand front door -->
+      <article class="work-card work-card--visual" data-category="social">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-social-payday-pup.jpg" alt="TD Bank Instagram post: a golden retriever beside a TD Store display with a green TD dog bowl" loading="lazy" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Social</span>
+            <h3 class="work-card__title">&ldquo;TFW it&rsquo;s a payday&hellip;&rdquo;</h3>
+            <p class="work-card__client">TD Bank · Brand social · Instagram</p>
+            <p class="work-card__teaser">
+              A brand-voice post that turns a small TD Store perk into a
+              scroll-stopping moment for dog people.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-social-payday-pup.jpg" alt="TD Bank Instagram post: a golden retriever beside a TD Store display with a green TD dog bowl" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Social copy</p>
+          <p class="detail__meta"><strong>Brief:</strong> Keep TD&rsquo;s brand voice warm, funny and human in the feed.</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Caption</h4>
+          <p>TFW it&rsquo;s a payday&hellip; and your furry friend gets to make a withdrawal too! 🐾 💰 Treat your pup to a doggy biscuit the next time you&rsquo;re in a TD Store — they&rsquo;ve earned it!</p>
+        </template>
+      </article>
+
+      <article class="work-card work-card--visual" data-category="print">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-payday-vibes.jpg" alt="TD Bank &lsquo;Payday vibes.&rsquo; poster for TD Early Pay" loading="lazy" style="aspect-ratio:558/784" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Print</span>
+            <h3 class="work-card__title">&ldquo;Payday vibes.&rdquo;</h3>
+            <p class="work-card__client">TD Bank · TD Early Pay · Poster</p>
+            <p class="work-card__teaser">
+              A product poster that sells a banking feature as a feeling.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure detail__figure--tall"><img src="assets/work/td-payday-vibes.jpg" alt="TD Bank &lsquo;Payday vibes.&rsquo; poster for TD Early Pay" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Headline &amp; product copy</p>
+          <p class="detail__meta"><strong>Brief:</strong> Make an early-direct-deposit feature feel like a lifestyle perk, not a banking term.</p>
+          <p class="detail__meta"><strong>Result:</strong> A poster that leads with the payoff and lets the product line do the explaining.</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Headline</h4>
+          <p class="detail__line">Payday vibes.</p>
+          <h4 class="detail__label">Subhead</h4>
+          <p>With TD Early Pay, you get paid up to 2 business days early.</p>
+          <h4 class="detail__label">Tagline</h4>
+          <p class="detail__line">More human.</p>
+        </template>
+      </article>
+
+      <article class="work-card work-card--visual" data-category="script">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-video-complete-checking.jpg" alt="Still from TD Complete Checking online video: a graduate portrait with the line &lsquo;Here for all life&rsquo;s adventures.&rsquo;" loading="lazy" style="aspect-ratio:849/469" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Video</span>
+            <h3 class="work-card__title">&ldquo;Here for all life&rsquo;s adventures.&rdquo;</h3>
+            <p class="work-card__client">TD Bank · TD Complete Checking · Online video (OLV)</p>
+            <p class="work-card__teaser">
+              An online video that frames an everyday checking account around the
+              milestones it helps you reach.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-video-complete-checking.jpg" alt="Still from TD Complete Checking online video: a graduate portrait with the line &lsquo;Here for all life&rsquo;s adventures.&rsquo;" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> OLV concept &amp; script</p>
+          <p class="detail__meta"><strong>Brief:</strong> Make an everyday checking account feel like it&rsquo;s there for life&rsquo;s big moments — starting with graduation.</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">On-screen</h4>
+          <p class="detail__line">Here for all life&rsquo;s adventures.</p>
+          <p>TD Complete Checking.</p>
+        </template>
+      </article>
+
+      <article class="work-card work-card--visual" data-category="print">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-poster-home-loans.jpg" alt="TD Bank poster: &lsquo;Some things aren&rsquo;t DIY. Let&rsquo;s tackle home loans together.&rsquo;" loading="lazy" style="aspect-ratio:577/790" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Print</span>
+            <h3 class="work-card__title">&ldquo;Some things aren&rsquo;t DIY.&rdquo;</h3>
+            <p class="work-card__client">TD Bank · Home lending · Poster</p>
+            <p class="work-card__teaser">
+              A home-loans poster that meets nervous first-timers with a wink and
+              an offer to help.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure detail__figure--tall"><img src="assets/work/td-poster-home-loans.jpg" alt="TD Bank poster: &lsquo;Some things aren&rsquo;t DIY. Let&rsquo;s tackle home loans together.&rsquo;" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Headline &amp; product copy</p>
+          <p class="detail__meta"><strong>Brief:</strong> Make home lending feel approachable for people who&rsquo;d rather avoid the whole subject.</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Headline</h4>
+          <p class="detail__line">Some things aren&rsquo;t DIY.</p>
+          <h4 class="detail__label">Subhead</h4>
+          <p>Let&rsquo;s tackle home loans together.</p>
+          <h4 class="detail__label">Tagline</h4>
+          <p class="detail__line">More human.</p>
+        </template>
+      </article>
+
       <article class="work-card work-card--visual" data-category="web">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__media"><img src="assets/work/td-unexpectedly-human.jpg" alt="TD Bank &lsquo;Unexpectedly Human&rsquo; brand homepage — people matter most" loading="lazy" /></span>
@@ -170,38 +272,6 @@
         </template>
       </article>
 
-      <!-- Web & Brand — TD Diversity & Inclusion page -->
-      <article class="work-card work-card--visual" data-category="web">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-diversity-inclusion.jpg" alt="TD Bank Diversity &amp; Inclusion web page: &lsquo;A place for everyone&rsquo;" loading="lazy" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Web</span>
-            <h3 class="work-card__title">A place for everyone</h3>
-            <p class="work-card__client">TD Bank · Diversity &amp; Inclusion (About) · Website</p>
-            <p class="work-card__teaser">
-              The Diversity &amp; Inclusion section of TD&rsquo;s brand site — a
-              welcome written in the brand&rsquo;s human voice.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-diversity-inclusion.jpg" alt="TD Bank Diversity &amp; Inclusion web page: &lsquo;A place for everyone&rsquo;" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Brand messaging &amp; web copy</p>
-          <p class="detail__meta"><strong>Brief:</strong> Give TD&rsquo;s Diversity &amp; Inclusion content a warm, human voice that invites people in.</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">Hero</h4>
-          <p class="detail__line">A place for everyone</p>
-          <p>Everyone deserves a place where they feel welcomed and accepted for who they are.</p>
-          <h4 class="detail__label">Diversity and Inclusion</h4>
-          <p>There are so many aspects to who we are, from the people we love to the languages we speak. Learning what sets us apart, and understanding what connects us all, helps us build a world for everyone.</p>
-          <h4 class="detail__label">Moving forward together</h4>
-          <p>As we work to support and include people of all backgrounds and experiences, there&rsquo;s always more work that needs to be done.</p>
-        </template>
-      </article>
-
-      <!-- 2 · Social & Digital — Connecticut Sun sponsorship launch -->
       <article class="work-card work-card--visual" data-category="social">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__media work-card__media--center"><img src="assets/work/td-connecticut-sun.jpg" alt="Arena scoreboard reading &lsquo;Huge fans of the Sun. Now it&rsquo;s official.&rsquo; with TD Bank and Connecticut Sun logos" loading="lazy" /></span>
@@ -236,413 +306,6 @@
         </template>
       </article>
 
-      <!-- Social & Digital — TD credit card rewards × Amazon -->
-      <article class="work-card work-card--visual" data-category="social">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-social-rewards.jpg" alt="TD Bank Instagram post: a poodle in a purple tutu with the line &lsquo;Diamond&rsquo;s birthday cost me $0&rsquo;" loading="lazy" style="aspect-ratio:1080/1164" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Social</span>
-            <h3 class="work-card__title">&ldquo;Diamond&rsquo;s birthday cost me $0.&rdquo;</h3>
-            <p class="work-card__client">TD Bank · Credit card rewards &times; Amazon · Instagram</p>
-            <p class="work-card__teaser">
-              Carousel post promoting the use of Amazon Shop with Points for TD
-              credit cardholders. Planned and shot our own photography.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure detail__figure--tall"><img src="assets/work/td-social-rewards.jpg" alt="TD Bank Instagram post: a poodle in a purple tutu with the line &lsquo;Diamond&rsquo;s birthday cost me $0&rsquo;" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Social copy</p>
-          <p class="detail__meta"><strong>Brief:</strong> Make &ldquo;Shop with Points at Amazon.com&rdquo; feel like a treat, not a terms-and-conditions footnote.</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">On-image copy</h4>
-          <p class="detail__line">Diamond&rsquo;s birthday cost me $0.</p>
-          <p>All I had to do was link my eligible TD credit card to use my TD credit card rewards at Amazon.com.</p>
-          <h4 class="detail__label">Caption</h4>
-          <p>When your fur baby&rsquo;s big day sneaks up on you, TD Bank has your back. Redeem your eligible TD credit card rewards at Amazon.com and make last-minute gifting a walk in the park.</p>
-        </template>
-      </article>
-
-      <!-- Social & Digital — TD Bank app / Life moves fast -->
-      <article class="work-card work-card--visual" data-category="social">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-social-life-moves-fast.jpg" alt="TD Bank social still of a woman with the line &lsquo;Life moves fast.&rsquo;" loading="lazy" style="aspect-ratio:1080/1252" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Social</span>
-            <h3 class="work-card__title">&ldquo;Life moves fast.&rdquo;</h3>
-            <p class="work-card__client">TD Bank · TD Bank app · Instagram</p>
-            <p class="work-card__teaser">
-              Organic social post using a 30-second brand OLV promoting digital
-              capabilities of TD&rsquo;s banking app.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure detail__figure--tall"><img src="assets/work/td-social-life-moves-fast.jpg" alt="TD Bank social still of a woman with the line &lsquo;Life moves fast.&rsquo;" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Social copy</p>
-          <p class="detail__meta"><strong>Brief:</strong> Show that the TD Bank app fits real life — splitting checks, rent, balances — without a feature dump.</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">On-image line</h4>
-          <p class="detail__line">Life moves fast.</p>
-          <h4 class="detail__label">Caption</h4>
-          <p>Split the check, pay your rent or keep tabs on your balance — all on your time. The TD Bank app gives you access to all your accounts, so you can easily stay on top of your money wherever the day takes you.</p>
-          <figure class="detail__figure detail__figure--tall"><img src="assets/work/td-social-app.jpg" alt="TD Bank app account screen shown in the second slide of the post" /></figure>
-        </template>
-      </article>
-
-      <!-- Social & Digital — payday pup brand post -->
-      <article class="work-card work-card--visual" data-category="social">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-social-payday-pup.jpg" alt="TD Bank Instagram post: a golden retriever beside a TD Store display with a green TD dog bowl" loading="lazy" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Social</span>
-            <h3 class="work-card__title">&ldquo;TFW it&rsquo;s a payday&hellip;&rdquo;</h3>
-            <p class="work-card__client">TD Bank · Brand social · Instagram</p>
-            <p class="work-card__teaser">
-              A brand-voice post that turns a small TD Store perk into a
-              scroll-stopping moment for dog people.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-social-payday-pup.jpg" alt="TD Bank Instagram post: a golden retriever beside a TD Store display with a green TD dog bowl" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Social copy</p>
-          <p class="detail__meta"><strong>Brief:</strong> Keep TD&rsquo;s brand voice warm, funny and human in the feed.</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">Caption</h4>
-          <p>TFW it&rsquo;s a payday&hellip; and your furry friend gets to make a withdrawal too! 🐾 💰 Treat your pup to a doggy biscuit the next time you&rsquo;re in a TD Store — they&rsquo;ve earned it!</p>
-        </template>
-      </article>
-
-      <!-- 4 · Long-form & Editorial — Independence Blue Cross / PhillyVoice -->
-      <article class="work-card work-card--visual" data-category="editorial">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-apples.jpg" alt="Three apples — green, red, green — on a wooden surface" loading="lazy" style="object-position:center bottom" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Editorial</span>
-            <h3 class="work-card__title">&ldquo;Comparing apples to apples: the best ways to enjoy them&rdquo;</h3>
-            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
-            <p class="work-card__teaser">
-              A bylined healthy-living feature for a major health insurer — wellness
-              advice written to be genuinely read, not skimmed.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-apples.jpg" alt="Three apples — green, red, green — on a wooden surface" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
-          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
-          <p class="detail__meta"><strong>Brief:</strong> Turn seasonal healthy-eating advice into a warm, genuinely useful read for a health insurer&rsquo;s consumer audience.</p>
-          <hr class="detail__rule" />
-          <p>A bylined lifestyle feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s health-and-wellness editorial — the kind of service writing that makes a health plan feel like a helpful neighbour, not a claims department.</p>
-          <p class="detail__cta">
-            <a class="btn btn--primary" href="https://www.phillyvoice.com/comparing-apples-apples-best-ways-enjoy-them-059991/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
-          </p>
-          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
-        </template>
-      </article>
-
-      <!-- Long-form & Editorial — treadmill article (PhillyVoice) -->
-      <article class="work-card work-card--visual" data-category="editorial">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-treadmill.jpg" alt="Close-up of running shoes on a treadmill" loading="lazy" style="object-position:center" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Editorial</span>
-            <h3 class="work-card__title">&ldquo;Three ways to make your treadmill run more fun&rdquo;</h3>
-            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
-            <p class="work-card__teaser">
-              A bylined service piece that turns the dreaded treadmill slog into
-              something you might actually look forward to.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-treadmill.jpg" alt="Close-up of running shoes on a treadmill" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
-          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
-          <p class="detail__meta"><strong>Brief:</strong> Make indoor running feel less like a chore for a health insurer&rsquo;s consumer audience.</p>
-          <hr class="detail__rule" />
-          <p>A bylined health-and-wellness feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s editorial — practical, encouraging advice that meets readers where they are.</p>
-          <p class="detail__cta">
-            <a class="btn btn--primary" href="https://www.phillyvoice.com/05999-three-ways-make-your-treadmill-run-more-fun/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
-          </p>
-          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
-        </template>
-      </article>
-
-      <!-- Long-form & Editorial — cholesterol article (PhillyVoice) -->
-      <article class="work-card work-card--visual" data-category="editorial">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-cholesterol.jpg" alt="A glossy red heart with a stethoscope resting on an ECG printout" loading="lazy" style="object-position:center" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Editorial</span>
-            <h3 class="work-card__title">&ldquo;Here&rsquo;s why you should get a cholesterol screening ASAP&rdquo;</h3>
-            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
-            <p class="work-card__teaser">
-              A bylined explainer that makes an easy-to-put-off health task feel
-              urgent — and genuinely doable.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-cholesterol.jpg" alt="A glossy red heart with a stethoscope resting on an ECG printout" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
-          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
-          <p class="detail__meta"><strong>Brief:</strong> Motivate readers to schedule a cholesterol screening — clear and encouraging, never fear-mongering.</p>
-          <hr class="detail__rule" />
-          <p>A bylined health-and-wellness feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s editorial — turning preventive-care advice into a nudge people will actually act on.</p>
-          <p class="detail__cta">
-            <a class="btn btn--primary" href="https://www.phillyvoice.com/05999-heres-why-you-should-get-cholesterol-screening-asap/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
-          </p>
-          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
-        </template>
-      </article>
-
-      <!-- Long-form & Editorial — first-aid kit article (PhillyVoice) -->
-      <article class="work-card work-card--visual" data-category="editorial">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-first-aid.jpg" alt="Hands opening a red first-aid kit filled with supplies on a wooden table" loading="lazy" style="object-position:center" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Editorial</span>
-            <h3 class="work-card__title">&ldquo;How to pack the perfect first-aid kit&rdquo;</h3>
-            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
-            <p class="work-card__teaser">
-              A bylined how-to that turns &ldquo;I should really put one together&rdquo;
-              into a kit you&rsquo;ll actually pack.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-first-aid.jpg" alt="Hands opening a red first-aid kit filled with supplies on a wooden table" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
-          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
-          <p class="detail__meta"><strong>Brief:</strong> Give readers a clear, practical checklist for building a first-aid kit — useful enough to keep.</p>
-          <hr class="detail__rule" />
-          <p>A bylined health-and-wellness feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s editorial — service journalism that&rsquo;s genuinely handy, not filler.</p>
-          <p class="detail__cta">
-            <a class="btn btn--primary" href="https://www.phillyvoice.com/how-pack-perfect-first-aid-kit-059991/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
-          </p>
-          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
-        </template>
-      </article>
-
-      <!-- Long-form & Editorial — IBX healthy resources article (PhillyVoice) -->
-      <article class="work-card work-card--visual" data-category="editorial">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-better-you.jpg" alt="An older couple running on treadmills at a gym, smiling" loading="lazy" style="object-position:center" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Editorial</span>
-            <h3 class="work-card__title">&ldquo;Achieve a better you with these healthy resources&rdquo;</h3>
-            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
-            <p class="work-card__teaser">
-              A bylined guide pointing readers to Independence Blue Cross&rsquo;s
-              member health resources — helpful, never salesy.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-better-you.jpg" alt="An older couple running on treadmills at a gym, smiling" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
-          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
-          <p class="detail__meta"><strong>Brief:</strong> Drive awareness of Independence Blue Cross&rsquo;s member health resources through genuinely useful editorial.</p>
-          <hr class="detail__rule" />
-          <p>A bylined health-and-wellness feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s editorial — connecting readers with the tools and programs their plan already offers.</p>
-          <p class="detail__cta">
-            <a class="btn btn--primary" href="https://www.phillyvoice.com/achieve-better-you-these-healthy-resources-independence-blue-cross-ibx-059991/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
-          </p>
-          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
-        </template>
-      </article>
-
-      <!-- Long-form & Editorial — women's preventive health article (PhillyVoice) -->
-      <article class="work-card work-card--visual" data-category="editorial">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-preventive-health.jpg" alt="A woman jogging along a path in a sunlit park" loading="lazy" style="object-position:center" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Editorial</span>
-            <h3 class="work-card__title">&ldquo;Here&rsquo;s how women can prioritize preventive health&rdquo;</h3>
-            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
-            <p class="work-card__teaser">
-              A bylined guide to the screenings and habits that help women stay
-              ahead of their health.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-preventive-health.jpg" alt="A woman jogging along a path in a sunlit park" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
-          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
-          <p class="detail__meta"><strong>Brief:</strong> Encourage women to stay on top of preventive care with clear, non-preachy guidance.</p>
-          <hr class="detail__rule" />
-          <p>A bylined health-and-wellness feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s editorial — turning preventive-health advice into something practical and reassuring.</p>
-          <p class="detail__cta">
-            <a class="btn btn--primary" href="https://www.phillyvoice.com/heres-how-women-can-prioritize-preventive-health-059991/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
-          </p>
-          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
-        </template>
-      </article>
-
-      <!-- 5 · Video & Film — Community Impact Plan -->
-      <article class="work-card work-card--visual" data-category="script">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-community-impact-plan.jpg" alt="Title card from TD Bank&rsquo;s Community Impact Plan brand film" loading="lazy" style="aspect-ratio:841/472" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Video</span>
-            <h3 class="work-card__title">Community Impact Plan</h3>
-            <p class="work-card__client">TD Bank · Brand film</p>
-            <p class="work-card__teaser">
-              The brand film introducing TD&rsquo;s Community Impact Plan — a
-              purpose story with a pulse, not a press release.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-community-impact-plan.jpg" alt="Title card from TD Bank&rsquo;s Community Impact Plan brand film" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Video concept &amp; script</p>
-          <p class="detail__meta"><strong>Brief:</strong> Turn a corporate community-investment plan into a film people actually feel — grand-openings, ribbon-cuttings and real neighbourhoods.</p>
-          <p class="detail__meta"><strong>Result:</strong> A flagship brand film anchoring TD&rsquo;s community storytelling.</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">Title treatment</h4>
-          <p class="detail__line">Community Impact Plan — by TD Bank.</p>
-          <p class="detail__note">Add the full VO / script here when you&rsquo;re ready — this card is set up to hold it. (Search &ldquo;Community Impact&rdquo; in index.html.)</p>
-        </template>
-      </article>
-
-      <!-- Video & Film — TD Complete Checking OLV -->
-      <article class="work-card work-card--visual" data-category="script">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-video-complete-checking.jpg" alt="Still from TD Complete Checking online video: a graduate portrait with the line &lsquo;Here for all life&rsquo;s adventures.&rsquo;" loading="lazy" style="aspect-ratio:849/469" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Video</span>
-            <h3 class="work-card__title">&ldquo;Here for all life&rsquo;s adventures.&rdquo;</h3>
-            <p class="work-card__client">TD Bank · TD Complete Checking · Online video (OLV)</p>
-            <p class="work-card__teaser">
-              An online video that frames an everyday checking account around the
-              milestones it helps you reach.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-video-complete-checking.jpg" alt="Still from TD Complete Checking online video: a graduate portrait with the line &lsquo;Here for all life&rsquo;s adventures.&rsquo;" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> OLV concept &amp; script</p>
-          <p class="detail__meta"><strong>Brief:</strong> Make an everyday checking account feel like it&rsquo;s there for life&rsquo;s big moments — starting with graduation.</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">On-screen</h4>
-          <p class="detail__line">Here for all life&rsquo;s adventures.</p>
-          <p>TD Complete Checking.</p>
-        </template>
-      </article>
-
-      <!-- Video & Film — 425 Grand Concourse -->
-      <article class="work-card work-card--visual" data-category="script">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-video-grand-concourse.jpg" alt="Aerial video still of the 425 Grand Concourse tower in the Bronx, &lsquo;shared by TD Bank&rsquo;" loading="lazy" style="aspect-ratio:786/475" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Video</span>
-            <h3 class="work-card__title">425 Grand Concourse</h3>
-            <p class="work-card__client">TD Bank · Community development · Film</p>
-            <p class="work-card__teaser">
-              A community-impact film on a landmark Bronx development TD helped
-              make possible.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-video-grand-concourse.jpg" alt="Aerial video still of the 425 Grand Concourse tower in the Bronx, &lsquo;shared by TD Bank&rsquo;" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Video concept &amp; script</p>
-          <p class="detail__meta"><strong>Brief:</strong> Tell the story of a major sustainable, affordable-housing development in the Bronx — and TD&rsquo;s part in it — as a community story, not a finance case study.</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">On-screen</h4>
-          <p class="detail__line">425 Grand Concourse</p>
-          <p>Shared by TD Bank.</p>
-          <p class="detail__note">Add the full VO / script here when you&rsquo;re ready — this card is set up to hold it.</p>
-        </template>
-      </article>
-
-      <!-- Video & Film — HBCU social-impact film -->
-      <article class="work-card work-card--visual" data-category="script">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-video-hbcu.jpg" alt="Video still of two HBCU students for a TD Bank social-impact film" loading="lazy" style="aspect-ratio:271/139" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Video</span>
-            <h3 class="work-card__title">&ldquo;HBCUs: Inspiring excellence in the classroom &mdash; and beyond&rdquo;</h3>
-            <p class="work-card__client">TD Bank · Social impact · Film</p>
-            <p class="work-card__teaser">
-              A film on why TD supports — and recruits from — Historically Black
-              Colleges and Universities.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure"><img src="assets/work/td-video-hbcu.jpg" alt="Video still of two HBCU students for a TD Bank social-impact film" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Video concept &amp; copy</p>
-          <p class="detail__meta"><strong>Brief:</strong> Show TD&rsquo;s commitment to HBCUs through the students and stories behind it.</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">Title</h4>
-          <p class="detail__line">HBCUs: Inspiring excellence in the classroom &mdash; and beyond</p>
-          <h4 class="detail__label">Copy</h4>
-          <p>Every day, Historically Black Colleges and Universities set the stage for students like Damaal and Traquel. See firsthand why we continue to support&mdash;and recruit from&mdash;HBCUs across the country.</p>
-          <p class="detail__line">Watch now →</p>
-        </template>
-      </article>
-
-      <!-- 6 · Print & OOH — Payday vibes poster -->
-      <article class="work-card work-card--visual" data-category="print">
-        <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-payday-vibes.jpg" alt="TD Bank &lsquo;Payday vibes.&rsquo; poster for TD Early Pay" loading="lazy" style="aspect-ratio:558/784" /></span>
-          <span class="work-card__body">
-            <span class="work-card__tag">Print</span>
-            <h3 class="work-card__title">&ldquo;Payday vibes.&rdquo;</h3>
-            <p class="work-card__client">TD Bank · TD Early Pay · Poster</p>
-            <p class="work-card__teaser">
-              A product poster that sells a banking feature as a feeling.
-            </p>
-            <span class="work-card__cue">Read the sample →</span>
-          </span>
-        </button>
-
-        <template class="work-card__detail">
-          <figure class="detail__figure detail__figure--tall"><img src="assets/work/td-payday-vibes.jpg" alt="TD Bank &lsquo;Payday vibes.&rsquo; poster for TD Early Pay" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Headline &amp; product copy</p>
-          <p class="detail__meta"><strong>Brief:</strong> Make an early-direct-deposit feature feel like a lifestyle perk, not a banking term.</p>
-          <p class="detail__meta"><strong>Result:</strong> A poster that leads with the payoff and lets the product line do the explaining.</p>
-          <hr class="detail__rule" />
-          <h4 class="detail__label">Headline</h4>
-          <p class="detail__line">Payday vibes.</p>
-          <h4 class="detail__label">Subhead</h4>
-          <p>With TD Early Pay, you get paid up to 2 business days early.</p>
-          <h4 class="detail__label">Tagline</h4>
-          <p class="detail__line">More human.</p>
-        </template>
-      </article>
-
-      <!-- Print & OOH — recycled pens campaign (two executions) -->
       <article class="work-card work-card--visual" data-category="print">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__media"><img src="assets/work/td-poster-pens-1.jpg" alt="TD Bank recycled-pen poster: &lsquo;Signed. Saved. Recycled. (I&rsquo;m yours!)&rsquo;" loading="lazy" style="aspect-ratio:537/694" /></span>
@@ -673,7 +336,61 @@
         </template>
       </article>
 
-      <!-- Print & OOH — credit cards -->
+      <article class="work-card work-card--visual" data-category="script">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-video-grand-concourse.jpg" alt="Aerial video still of the 425 Grand Concourse tower in the Bronx, &lsquo;shared by TD Bank&rsquo;" loading="lazy" style="aspect-ratio:786/475" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Video</span>
+            <h3 class="work-card__title">425 Grand Concourse</h3>
+            <p class="work-card__client">TD Bank · Community development · Film</p>
+            <p class="work-card__teaser">
+              A community-impact film on a landmark Bronx development TD helped
+              make possible.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-video-grand-concourse.jpg" alt="Aerial video still of the 425 Grand Concourse tower in the Bronx, &lsquo;shared by TD Bank&rsquo;" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Video concept &amp; script</p>
+          <p class="detail__meta"><strong>Brief:</strong> Tell the story of a major sustainable, affordable-housing development in the Bronx — and TD&rsquo;s part in it — as a community story, not a finance case study.</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">On-screen</h4>
+          <p class="detail__line">425 Grand Concourse</p>
+          <p>Shared by TD Bank.</p>
+          <p class="detail__note">Add the full VO / script here when you&rsquo;re ready — this card is set up to hold it.</p>
+        </template>
+      </article>
+
+      <article class="work-card work-card--visual" data-category="social">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-social-rewards.jpg" alt="TD Bank Instagram post: a poodle in a purple tutu with the line &lsquo;Diamond&rsquo;s birthday cost me $0&rsquo;" loading="lazy" style="aspect-ratio:1080/1164" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Social</span>
+            <h3 class="work-card__title">&ldquo;Diamond&rsquo;s birthday cost me $0.&rdquo;</h3>
+            <p class="work-card__client">TD Bank · Credit card rewards &times; Amazon · Instagram</p>
+            <p class="work-card__teaser">
+              Carousel post promoting the use of Amazon Shop with Points for TD
+              credit cardholders. Planned and shot our own photography.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure detail__figure--tall"><img src="assets/work/td-social-rewards.jpg" alt="TD Bank Instagram post: a poodle in a purple tutu with the line &lsquo;Diamond&rsquo;s birthday cost me $0&rsquo;" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Social copy</p>
+          <p class="detail__meta"><strong>Brief:</strong> Make &ldquo;Shop with Points at Amazon.com&rdquo; feel like a treat, not a terms-and-conditions footnote.</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">On-image copy</h4>
+          <p class="detail__line">Diamond&rsquo;s birthday cost me $0.</p>
+          <p>All I had to do was link my eligible TD credit card to use my TD credit card rewards at Amazon.com.</p>
+          <h4 class="detail__label">Caption</h4>
+          <p>When your fur baby&rsquo;s big day sneaks up on you, TD Bank has your back. Redeem your eligible TD credit card rewards at Amazon.com and make last-minute gifting a walk in the park.</p>
+        </template>
+      </article>
+
       <article class="work-card work-card--visual" data-category="print">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__media"><img src="assets/work/td-poster-credit-card.jpg" alt="TD Bank poster: &lsquo;A credit card for every day. And every now and then.&rsquo;" loading="lazy" style="aspect-ratio:546/757" /></span>
@@ -701,37 +418,92 @@
         </template>
       </article>
 
-      <!-- Print & OOH — home lending -->
-      <article class="work-card work-card--visual" data-category="print">
+      <article class="work-card work-card--visual" data-category="web">
         <button class="work-card__open" aria-haspopup="dialog">
-          <span class="work-card__media"><img src="assets/work/td-poster-home-loans.jpg" alt="TD Bank poster: &lsquo;Some things aren&rsquo;t DIY. Let&rsquo;s tackle home loans together.&rsquo;" loading="lazy" style="aspect-ratio:577/790" /></span>
+          <span class="work-card__media"><img src="assets/work/td-diversity-inclusion.jpg" alt="TD Bank Diversity &amp; Inclusion web page: &lsquo;A place for everyone&rsquo;" loading="lazy" /></span>
           <span class="work-card__body">
-            <span class="work-card__tag">Print</span>
-            <h3 class="work-card__title">&ldquo;Some things aren&rsquo;t DIY.&rdquo;</h3>
-            <p class="work-card__client">TD Bank · Home lending · Poster</p>
+            <span class="work-card__tag">Web</span>
+            <h3 class="work-card__title">A place for everyone</h3>
+            <p class="work-card__client">TD Bank · Diversity &amp; Inclusion (About) · Website</p>
             <p class="work-card__teaser">
-              A home-loans poster that meets nervous first-timers with a wink and
-              an offer to help.
+              The Diversity &amp; Inclusion section of TD&rsquo;s brand site — a
+              welcome written in the brand&rsquo;s human voice.
             </p>
             <span class="work-card__cue">Read the sample →</span>
           </span>
         </button>
 
         <template class="work-card__detail">
-          <figure class="detail__figure detail__figure--tall"><img src="assets/work/td-poster-home-loans.jpg" alt="TD Bank poster: &lsquo;Some things aren&rsquo;t DIY. Let&rsquo;s tackle home loans together.&rsquo;" /></figure>
-          <p class="detail__meta"><strong>Role:</strong> Headline &amp; product copy</p>
-          <p class="detail__meta"><strong>Brief:</strong> Make home lending feel approachable for people who&rsquo;d rather avoid the whole subject.</p>
+          <figure class="detail__figure"><img src="assets/work/td-diversity-inclusion.jpg" alt="TD Bank Diversity &amp; Inclusion web page: &lsquo;A place for everyone&rsquo;" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Brand messaging &amp; web copy</p>
+          <p class="detail__meta"><strong>Brief:</strong> Give TD&rsquo;s Diversity &amp; Inclusion content a warm, human voice that invites people in.</p>
           <hr class="detail__rule" />
-          <h4 class="detail__label">Headline</h4>
-          <p class="detail__line">Some things aren&rsquo;t DIY.</p>
-          <h4 class="detail__label">Subhead</h4>
-          <p>Let&rsquo;s tackle home loans together.</p>
-          <h4 class="detail__label">Tagline</h4>
-          <p class="detail__line">More human.</p>
+          <h4 class="detail__label">Hero</h4>
+          <p class="detail__line">A place for everyone</p>
+          <p>Everyone deserves a place where they feel welcomed and accepted for who they are.</p>
+          <h4 class="detail__label">Diversity and Inclusion</h4>
+          <p>There are so many aspects to who we are, from the people we love to the languages we speak. Learning what sets us apart, and understanding what connects us all, helps us build a world for everyone.</p>
+          <h4 class="detail__label">Moving forward together</h4>
+          <p>As we work to support and include people of all backgrounds and experiences, there&rsquo;s always more work that needs to be done.</p>
         </template>
       </article>
 
-      <!-- Print & OOH — mobile check deposit -->
+      <article class="work-card work-card--visual" data-category="script">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-video-hbcu.jpg" alt="Video still of two HBCU students for a TD Bank social-impact film" loading="lazy" style="aspect-ratio:271/139" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Video</span>
+            <h3 class="work-card__title">&ldquo;HBCUs: Inspiring excellence in the classroom &mdash; and beyond&rdquo;</h3>
+            <p class="work-card__client">TD Bank · Social impact · Film</p>
+            <p class="work-card__teaser">
+              A film on why TD supports — and recruits from — Historically Black
+              Colleges and Universities.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-video-hbcu.jpg" alt="Video still of two HBCU students for a TD Bank social-impact film" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Video concept &amp; copy</p>
+          <p class="detail__meta"><strong>Brief:</strong> Show TD&rsquo;s commitment to HBCUs through the students and stories behind it.</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Title</h4>
+          <p class="detail__line">HBCUs: Inspiring excellence in the classroom &mdash; and beyond</p>
+          <h4 class="detail__label">Copy</h4>
+          <p>Every day, Historically Black Colleges and Universities set the stage for students like Damaal and Traquel. See firsthand why we continue to support&mdash;and recruit from&mdash;HBCUs across the country.</p>
+          <p class="detail__line">Watch now →</p>
+        </template>
+      </article>
+
+      <article class="work-card work-card--visual" data-category="social">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-social-life-moves-fast.jpg" alt="TD Bank social still of a woman with the line &lsquo;Life moves fast.&rsquo;" loading="lazy" style="aspect-ratio:1080/1252" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Social</span>
+            <h3 class="work-card__title">&ldquo;Life moves fast.&rdquo;</h3>
+            <p class="work-card__client">TD Bank · TD Bank app · Instagram</p>
+            <p class="work-card__teaser">
+              Organic social post using a 30-second brand OLV promoting digital
+              capabilities of TD&rsquo;s banking app.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure detail__figure--tall"><img src="assets/work/td-social-life-moves-fast.jpg" alt="TD Bank social still of a woman with the line &lsquo;Life moves fast.&rsquo;" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Social copy</p>
+          <p class="detail__meta"><strong>Brief:</strong> Show that the TD Bank app fits real life — splitting checks, rent, balances — without a feature dump.</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">On-image line</h4>
+          <p class="detail__line">Life moves fast.</p>
+          <h4 class="detail__label">Caption</h4>
+          <p>Split the check, pay your rent or keep tabs on your balance — all on your time. The TD Bank app gives you access to all your accounts, so you can easily stay on top of your money wherever the day takes you.</p>
+          <figure class="detail__figure detail__figure--tall"><img src="assets/work/td-social-app.jpg" alt="TD Bank app account screen shown in the second slide of the post" /></figure>
+        </template>
+      </article>
+
       <article class="work-card work-card--visual" data-category="print">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__media"><img src="assets/work/td-poster-check-deposit.jpg" alt="TD Bank poster: &lsquo;Snap. Tap. Done.&rsquo; for mobile check deposit" loading="lazy" style="aspect-ratio:547/745" /></span>
@@ -761,7 +533,33 @@
         </template>
       </article>
 
-      <!-- Print — TD checking poster -->
+      <article class="work-card work-card--visual" data-category="script">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-community-impact-plan.jpg" alt="Title card from TD Bank&rsquo;s Community Impact Plan brand film" loading="lazy" style="aspect-ratio:841/472" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Video</span>
+            <h3 class="work-card__title">Community Impact Plan</h3>
+            <p class="work-card__client">TD Bank · Brand film</p>
+            <p class="work-card__teaser">
+              The brand film introducing TD&rsquo;s Community Impact Plan — a
+              purpose story with a pulse, not a press release.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-community-impact-plan.jpg" alt="Title card from TD Bank&rsquo;s Community Impact Plan brand film" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Video concept &amp; script</p>
+          <p class="detail__meta"><strong>Brief:</strong> Turn a corporate community-investment plan into a film people actually feel — grand-openings, ribbon-cuttings and real neighbourhoods.</p>
+          <p class="detail__meta"><strong>Result:</strong> A flagship brand film anchoring TD&rsquo;s community storytelling.</p>
+          <hr class="detail__rule" />
+          <h4 class="detail__label">Title treatment</h4>
+          <p class="detail__line">Community Impact Plan — by TD Bank.</p>
+          <p class="detail__note">Add the full VO / script here when you&rsquo;re ready — this card is set up to hold it. (Search &ldquo;Community Impact&rdquo; in index.html.)</p>
+        </template>
+      </article>
+
       <article class="work-card work-card--visual" data-category="print">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__media"><img src="assets/work/td-poster-checking.jpg" alt="TD Bank poster: &lsquo;Checking for every chapter.&rsquo;" loading="lazy" style="aspect-ratio:1100/633" /></span>
@@ -790,7 +588,6 @@
         </template>
       </article>
 
-      <!-- Print — IBX New Movers direct mail -->
       <article class="work-card work-card--visual" data-category="print">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__media"><img src="assets/work/ibx-newmovers.jpg" alt="Independence Blue Cross &lsquo;Welcome to the neighborhood!&rsquo; new-movers direct mail" loading="lazy" style="aspect-ratio:1100/765" /></span>
@@ -820,7 +617,35 @@
         </template>
       </article>
 
-      <!-- Print — IBX Dependents-to-26 birthday card -->
+      <article class="work-card work-card--visual" data-category="editorial">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-apples.jpg" alt="Three apples — green, red, green — on a wooden surface" loading="lazy" style="object-position:center bottom" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Editorial</span>
+            <h3 class="work-card__title">&ldquo;Comparing apples to apples: the best ways to enjoy them&rdquo;</h3>
+            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
+            <p class="work-card__teaser">
+              A bylined healthy-living feature for a major health insurer — wellness
+              advice written to be genuinely read, not skimmed.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-apples.jpg" alt="Three apples — green, red, green — on a wooden surface" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
+          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
+          <p class="detail__meta"><strong>Brief:</strong> Turn seasonal healthy-eating advice into a warm, genuinely useful read for a health insurer&rsquo;s consumer audience.</p>
+          <hr class="detail__rule" />
+          <p>A bylined lifestyle feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s health-and-wellness editorial — the kind of service writing that makes a health plan feel like a helpful neighbour, not a claims department.</p>
+          <p class="detail__cta">
+            <a class="btn btn--primary" href="https://www.phillyvoice.com/comparing-apples-apples-best-ways-enjoy-them-059991/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
+          </p>
+          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
+        </template>
+      </article>
+
       <article class="work-card work-card--visual" data-category="print">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__media"><img src="assets/work/ibx-bday.jpg" alt="Independence Blue Cross &lsquo;Hi 26. Nice to meet ya!&rsquo; birthday card" loading="lazy" style="aspect-ratio:997/1427" /></span>
@@ -849,7 +674,35 @@
         </template>
       </article>
 
-      <!-- Print — IBX Dependents-to-26 zombie mailer -->
+      <article class="work-card work-card--visual" data-category="editorial">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-treadmill.jpg" alt="Close-up of running shoes on a treadmill" loading="lazy" style="object-position:center" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Editorial</span>
+            <h3 class="work-card__title">&ldquo;Three ways to make your treadmill run more fun&rdquo;</h3>
+            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
+            <p class="work-card__teaser">
+              A bylined service piece that turns the dreaded treadmill slog into
+              something you might actually look forward to.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-treadmill.jpg" alt="Close-up of running shoes on a treadmill" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
+          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
+          <p class="detail__meta"><strong>Brief:</strong> Make indoor running feel less like a chore for a health insurer&rsquo;s consumer audience.</p>
+          <hr class="detail__rule" />
+          <p>A bylined health-and-wellness feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s editorial — practical, encouraging advice that meets readers where they are.</p>
+          <p class="detail__cta">
+            <a class="btn btn--primary" href="https://www.phillyvoice.com/05999-three-ways-make-your-treadmill-run-more-fun/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
+          </p>
+          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
+        </template>
+      </article>
+
       <article class="work-card work-card--visual" data-category="print">
         <button class="work-card__open" aria-haspopup="dialog">
           <span class="work-card__media"><img src="assets/work/ibx-zombie.jpg" alt="Independence Blue Cross &lsquo;Top 5 reasons you need health insurance&rsquo; mailer cover" loading="lazy" style="aspect-ratio:1100/1408" /></span>
@@ -881,6 +734,122 @@
             <li><strong>#5</strong> Because you like to have fun.</li>
           </ul>
           <figure class="detail__figure"><img src="assets/work/ibx-zombie-inside.jpg" alt="Independence Blue Cross zombie mailer, inside panels" /></figure>
+        </template>
+      </article>
+
+      <article class="work-card work-card--visual" data-category="editorial">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-cholesterol.jpg" alt="A glossy red heart with a stethoscope resting on an ECG printout" loading="lazy" style="object-position:center" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Editorial</span>
+            <h3 class="work-card__title">&ldquo;Here&rsquo;s why you should get a cholesterol screening ASAP&rdquo;</h3>
+            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
+            <p class="work-card__teaser">
+              A bylined explainer that makes an easy-to-put-off health task feel
+              urgent — and genuinely doable.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-cholesterol.jpg" alt="A glossy red heart with a stethoscope resting on an ECG printout" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
+          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
+          <p class="detail__meta"><strong>Brief:</strong> Motivate readers to schedule a cholesterol screening — clear and encouraging, never fear-mongering.</p>
+          <hr class="detail__rule" />
+          <p>A bylined health-and-wellness feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s editorial — turning preventive-care advice into a nudge people will actually act on.</p>
+          <p class="detail__cta">
+            <a class="btn btn--primary" href="https://www.phillyvoice.com/05999-heres-why-you-should-get-cholesterol-screening-asap/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
+          </p>
+          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
+        </template>
+      </article>
+
+      <article class="work-card work-card--visual" data-category="editorial">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-first-aid.jpg" alt="Hands opening a red first-aid kit filled with supplies on a wooden table" loading="lazy" style="object-position:center" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Editorial</span>
+            <h3 class="work-card__title">&ldquo;How to pack the perfect first-aid kit&rdquo;</h3>
+            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
+            <p class="work-card__teaser">
+              A bylined how-to that turns &ldquo;I should really put one together&rdquo;
+              into a kit you&rsquo;ll actually pack.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-first-aid.jpg" alt="Hands opening a red first-aid kit filled with supplies on a wooden table" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
+          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
+          <p class="detail__meta"><strong>Brief:</strong> Give readers a clear, practical checklist for building a first-aid kit — useful enough to keep.</p>
+          <hr class="detail__rule" />
+          <p>A bylined health-and-wellness feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s editorial — service journalism that&rsquo;s genuinely handy, not filler.</p>
+          <p class="detail__cta">
+            <a class="btn btn--primary" href="https://www.phillyvoice.com/how-pack-perfect-first-aid-kit-059991/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
+          </p>
+          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
+        </template>
+      </article>
+
+      <article class="work-card work-card--visual" data-category="editorial">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-better-you.jpg" alt="An older couple running on treadmills at a gym, smiling" loading="lazy" style="object-position:center" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Editorial</span>
+            <h3 class="work-card__title">&ldquo;Achieve a better you with these healthy resources&rdquo;</h3>
+            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
+            <p class="work-card__teaser">
+              A bylined guide pointing readers to Independence Blue Cross&rsquo;s
+              member health resources — helpful, never salesy.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-better-you.jpg" alt="An older couple running on treadmills at a gym, smiling" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
+          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
+          <p class="detail__meta"><strong>Brief:</strong> Drive awareness of Independence Blue Cross&rsquo;s member health resources through genuinely useful editorial.</p>
+          <hr class="detail__rule" />
+          <p>A bylined health-and-wellness feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s editorial — connecting readers with the tools and programs their plan already offers.</p>
+          <p class="detail__cta">
+            <a class="btn btn--primary" href="https://www.phillyvoice.com/achieve-better-you-these-healthy-resources-independence-blue-cross-ibx-059991/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
+          </p>
+          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
+        </template>
+      </article>
+
+      <article class="work-card work-card--visual" data-category="editorial">
+        <button class="work-card__open" aria-haspopup="dialog">
+          <span class="work-card__media"><img src="assets/work/td-preventive-health.jpg" alt="A woman jogging along a path in a sunlit park" loading="lazy" style="object-position:center" /></span>
+          <span class="work-card__body">
+            <span class="work-card__tag">Editorial</span>
+            <h3 class="work-card__title">&ldquo;Here&rsquo;s how women can prioritize preventive health&rdquo;</h3>
+            <p class="work-card__client">Independence Blue Cross · PhillyVoice · Bylined editorial</p>
+            <p class="work-card__teaser">
+              A bylined guide to the screenings and habits that help women stay
+              ahead of their health.
+            </p>
+            <span class="work-card__cue">Read the sample →</span>
+          </span>
+        </button>
+
+        <template class="work-card__detail">
+          <figure class="detail__figure"><img src="assets/work/td-preventive-health.jpg" alt="A woman jogging along a path in a sunlit park" /></figure>
+          <p class="detail__meta"><strong>Role:</strong> Bylined writer · Editorial / branded content</p>
+          <p class="detail__meta"><strong>Client:</strong> Independence Blue Cross, published on PhillyVoice</p>
+          <p class="detail__meta"><strong>Brief:</strong> Encourage women to stay on top of preventive care with clear, non-preachy guidance.</p>
+          <hr class="detail__rule" />
+          <p>A bylined health-and-wellness feature published on PhillyVoice as part of Independence Blue Cross&rsquo;s editorial — turning preventive-health advice into something practical and reassuring.</p>
+          <p class="detail__cta">
+            <a class="btn btn--primary" href="https://www.phillyvoice.com/heres-how-women-can-prioritize-preventive-health-059991/" target="_blank" rel="noopener">Read the full article on PhillyVoice →</a>
+          </p>
+          <p class="detail__note">Want the opening paragraphs shown right here instead of linking out? Paste them and I&rsquo;ll feature the excerpt in this panel.</p>
         </template>
       </article>
     </div>
