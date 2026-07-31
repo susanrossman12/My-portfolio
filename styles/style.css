@@ -193,7 +193,7 @@ main > section { max-width: var(--wrap); margin: 0 auto; padding: var(--section-
 /* --------------------------------------------------------------------------
    Hero
    -------------------------------------------------------------------------- */
-.hero { padding-top: clamp(3rem, 7vw, 6rem); }
+.hero { padding-top: clamp(3rem, 7vw, 6rem); padding-bottom: 0; }
 .hero__eyebrow {
   font-size: .78rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
   color: var(--accent); margin-bottom: 1.2rem;
@@ -206,7 +206,7 @@ main > section { max-width: var(--wrap); margin: 0 auto; padding: var(--section-
   font-size: clamp(1.1rem, 1.6vw, 1.4rem); color: var(--ink-soft);
   max-width: 46ch; margin-bottom: 2rem;
 }
-.hero__actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 3.5rem; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 0; }
 
 .hero__stats {
   list-style: none; margin: 0; padding: 0;
