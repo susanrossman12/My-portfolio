@@ -287,6 +287,8 @@ main > section { max-width: var(--wrap); margin: 0 auto; padding: var(--section-
 .work-card__title { font-size: 1.3rem; margin-bottom: .5rem; }
 .work-card__client { font-size: .82rem; color: var(--ink-soft); margin-bottom: .85rem; font-weight: 500; }
 .work-card__teaser { font-size: .96rem; color: var(--ink-soft); margin-bottom: 1.1rem; }
+.work-card__role { font-size: .85rem; color: var(--ink-soft); margin: 0 0 1.1rem; }
+.work-card__role strong { color: var(--ink); }
 .work-card__cue { font-size: .88rem; font-weight: 600; color: var(--accent); }
 
 .work-card[hidden] { display: none; }
