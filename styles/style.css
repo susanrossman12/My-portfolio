@@ -361,6 +361,7 @@ main > section { max-width: var(--wrap); margin: 0 auto; padding: var(--section-
   display: block; width: 100%; height: auto; border-radius: 10px;
   background: #000; box-shadow: 0 8px 28px rgba(0, 0, 0, .18);
 }
+.detail__video--portrait video { max-width: 20rem; margin-inline: auto; }
 .detail__label {
   font-family: var(--font-body); font-size: .72rem; font-weight: 600;
   letter-spacing: .12em; text-transform: uppercase; color: var(--accent);
