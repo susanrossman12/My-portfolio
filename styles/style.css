@@ -325,6 +325,13 @@ main > section { max-width: var(--wrap); margin: 0 auto; padding: var(--section-
   border-radius: 10px; border: 1px solid var(--line);
 }
 .detail__figure--tall img { max-width: 21rem; margin-inline: auto; }
+.detail__collage {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; margin: 0 0 1.4rem;
+}
+.detail__collage img {
+  width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+  border-radius: 8px; border: 1px solid var(--line); display: block;
+}
 
 /* --------------------------------------------------------------------------
    Reading panel (modal)
